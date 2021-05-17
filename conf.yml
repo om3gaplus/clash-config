@@ -95,7 +95,7 @@ proxies:
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
 proxy-groups:
-  - name: 🔰 Select
+  - name:  Select
     proxies:
       - azerbaijan | 1
       - azerbaijan | 2
