@@ -1,0 +1,140 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+proxies:
+  - name: azerbaijan | 1
+    type: ss
+    server: 62.212.239.45
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: azerbaijan | 2
+    type: ss
+    server: 94.20.154.85
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: azerbaijan | 3
+    type: ss
+    server: 62.212.239.51
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: azerbaijan | 4
+    type: ss
+    server: 94.20.154.83
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 1
+    type: ss
+    server: 196.244.191.43
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 2
+    type: ss
+    server: 196.244.191.163
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 3
+    type: ss
+    server: 196.244.191.35
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 4
+    type: ss
+    server: 196.196.203.101
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 5
+    type: ss
+    server: 196.244.191.37
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 6
+    type: ss
+    server: 196.244.191.45
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 7
+    type: ss
+    server: 196.244.191.91
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 8
+    type: ss
+    server: 196.244.191.197
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 9
+    type: ss
+    server: 196.244.191.181
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 10
+    type: ss
+    server: 196.244.191.99
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 11
+    type: ss
+    server: 196.244.191.107
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+proxy-groups:
+  - name: 🔥 Auto
+    proxies:
+      - azerbaijan | 1
+      - azerbaijan | 2
+      - azerbaijan | 3
+      - azerbaijan | 4
+      - finland | 1
+      - finland | 2
+      - finland | 3
+      - finland | 4
+      - finland | 5
+      - finland | 6
+      - finland | 7
+      - finland | 8
+      - finland | 9
+      - finland | 10
+      - finland | 11
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: "300"
+  - name: 🔰 Select
+    proxies:
+      - 🔥 Auto
+      - ✅ Direct
+    type: select
+  - name: ✅ Direct
+    proxies:
+      - DIRECT
+    type: select
+  - name: 🚫 Intercept
+    proxies:
+      - REJECT
+      - DIRECT
+    type: select
+rules:
+  - DOMAIN-SUFFIX,google.com,🔰 Select
+  - DOMAIN-KEYWORD,google,🔰 Select
+  - DOMAIN,google.com,🔰 Select
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,🔰 Select
