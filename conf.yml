@@ -94,7 +94,7 @@ proxies:
     port: "40093"
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
-  - name: iceland | 1
+  - name: iceland
     type: ss
     server: 45.133.193.221
     port: "40093"
@@ -118,6 +118,7 @@ proxy-groups:
       - finland | 9
       - finland | 10
       - finland | 11
+      - iceland      
     type: select
   - name: ✅ Direct
     proxies:
