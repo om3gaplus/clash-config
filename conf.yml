@@ -95,7 +95,7 @@ proxies:
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
 proxy-groups:
-  - name: 🔥 Auto
+  - name: 🔰 Select
     proxies:
       - azerbaijan | 1
       - azerbaijan | 2
@@ -112,13 +112,6 @@ proxy-groups:
       - finland | 9
       - finland | 10
       - finland | 11
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: "300"
-  - name: 🔰 Select
-    proxies:
-      - 🔥 Auto
-      - ✅ Direct
     type: select
   - name: ✅ Direct
     proxies:
