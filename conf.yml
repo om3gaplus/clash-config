@@ -118,7 +118,6 @@ proxy-groups:
       - finland | 9
       - finland | 10
       - finland | 11
-      - iceland | 1
     type: select
   - name: ✅ Direct
     proxies:
