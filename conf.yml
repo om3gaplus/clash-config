@@ -94,6 +94,48 @@ proxies:
     port: "40093"
     cipher: aes-256-gcm
     password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 12
+    type: ss
+    server: 196.244.191.179
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 13
+    type: ss
+    server: 196.196.203.99
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 14
+    type: ss
+    server: 196.244.191.195
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 15
+    type: ss
+    server: 196.244.191.109
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 16
+    type: ss
+    server: 196.244.191.93
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 17
+    type: ss
+    server: 196.244.191.101
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: finland | 18
+    type: ss
+    server: 196.244.191.165
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
   - name: iceland | 1
     type: ss
     server: 45.133.193.221
@@ -214,6 +256,13 @@ proxy-groups:
       - finland | 9
       - finland | 10
       - finland | 11
+      - finland | 12
+      - finland | 13
+      - finland | 14
+      - finland | 15
+      - finland | 16
+      - finland | 17
+      - finland | 18
       - iceland | 1
       - poland | 1
       - poland | 2
