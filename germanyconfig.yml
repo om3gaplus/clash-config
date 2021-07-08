@@ -1,0 +1,812 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+proxies:
+  - name: Germany | 1
+    type: ss
+    server: 144.91.123.50
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 2
+    type: ss
+    server: 144.91.123.52
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 3
+    type: ss
+    server: 193.29.106.67
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 4
+    type: ss
+    server: 193.29.106.51
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 5
+    type: ss
+    server: 193.29.106.171
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 6
+    type: ss
+    server: 152.89.163.229
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 7
+    type: ss
+    server: 193.29.106.45
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 8
+    type: ss
+    server: 193.29.106.3
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 9
+    type: ss
+    server: 193.29.106.187
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 10
+    type: ss
+    server: 193.29.106.125
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 11
+    type: ss
+    server: 193.29.106.93
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 12
+    type: ss
+    server: 193.176.86.171
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 13
+    type: ss
+    server: 37.120.217.149
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 14
+    type: ss
+    server: 193.29.106.117
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 15
+    type: ss
+    server: 152.89.163.245
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 16
+    type: ss
+    server: 89.36.76.53
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 17
+    type: ss
+    server: 193.29.106.203
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 18
+    type: ss
+    server: 89.36.76.61
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 19
+    type: ss
+    server: 193.29.106.21
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 20
+    type: ss
+    server: 152.89.163.231
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 21
+    type: ss
+    server: 217.138.216.61
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 22
+    type: ss
+    server: 152.89.163.243
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 23
+    type: ss
+    server: 152.89.163.227
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 24
+    type: ss
+    server: 193.29.106.163
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 25
+    type: ss
+    server: 193.29.106.100
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 26
+    type: ss
+    server: 193.29.106.69
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 27
+    type: ss
+    server: 37.120.217.179
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 28
+    type: ss
+    server: 193.29.106.107
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 29
+    type: ss
+    server: 193.29.106.61
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 30
+    type: ss
+    server: 193.29.106.11
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 31
+    type: ss
+    server: 193.29.106.205
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 32
+    type: ss
+    server: 193.29.106.147
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 33
+    type: ss
+    server: 193.29.106.115
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 34
+    type: ss
+    server: 217.138.216.237
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 35
+    type: ss
+    server: 193.29.106.189
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 36
+    type: ss
+    server: 193.29.106.43
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 37
+    type: ss
+    server: 217.138.216.219
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 38
+    type: ss
+    server: 152.89.163.247
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 39
+    type: ss
+    server: 193.29.106.5
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 40
+    type: ss
+    server: 193.29.106.179
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 41
+    type: ss
+    server: 217.138.216.59
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 42
+    type: ss
+    server: 217.138.216.235
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 43
+    type: ss
+    server: 193.29.106.149
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 44
+    type: ss
+    server: 193.29.106.211
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 45
+    type: ss
+    server: 193.29.106.157
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 46
+    type: ss
+    server: 193.29.106.59
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 47
+    type: ss
+    server: 193.176.86.131
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 48
+    type: ss
+    server: 193.29.106.35
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 49
+    type: ss
+    server: 193.29.106.197
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 50
+    type: ss
+    server: 89.36.76.67
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 51
+    type: ss
+    server: 37.120.217.181
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 52
+    type: ss
+    server: 193.176.86.173
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 53
+    type: ss
+    server: 193.29.106.173
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 54
+    type: ss
+    server: 193.29.106.155
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 55
+    type: ss
+    server: 193.29.106.99
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 56
+    type: ss
+    server: 193.29.106.181
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 57
+    type: ss
+    server: 193.29.106.133
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 58
+    type: ss
+    server: 193.29.106.13
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 59
+    type: ss
+    server: 217.138.216.253
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 60
+    type: ss
+    server: 217.138.216.221
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 61
+    type: ss
+    server: 193.29.106.37
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 62
+    type: ss
+    server: 193.29.106.27
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 63
+    type: ss
+    server: 37.120.196.51
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 64
+    type: ss
+    server: 37.120.197.13
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 65
+    type: ss
+    server: 45.87.212.213
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 66
+    type: ss
+    server: 82.102.16.99
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 67
+    type: ss
+    server: 156.146.33.87
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 68
+    type: ss
+    server: 138.199.19.147
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 69
+    type: ss
+    server: 138.199.19.182
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 70
+    type: ss
+    server: 138.199.19.184
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 71
+    type: ss
+    server: 156.146.33.79
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 72
+    type: ss
+    server: 156.146.33.77
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 73
+    type: ss
+    server: 156.146.33.81
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 74
+    type: ss
+    server: 37.120.196.59
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 75
+    type: ss
+    server: 138.199.19.157
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 76
+    type: ss
+    server: 138.199.19.162
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 77
+    type: ss
+    server: 156.146.33.71
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 78
+    type: ss
+    server: 185.102.219.49
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 79
+    type: ss
+    server: 138.199.19.159
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 80
+    type: ss
+    server: 185.59.220.150
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 81
+    type: ss
+    server: 37.120.196.53
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 82
+    type: ss
+    server: 138.199.19.152
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 83
+    type: ss
+    server: 138.199.19.167
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 84
+    type: ss
+    server: 185.93.180.99
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 85
+    type: ss
+    server: 185.59.220.144
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 86
+    type: ss
+    server: 138.199.19.144
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 87
+    type: ss
+    server: 138.199.19.179
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 88
+    type: ss
+    server: 89.187.169.104
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 89
+    type: ss
+    server: 138.199.19.132
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 90
+    type: ss
+    server: 156.146.33.85
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 91
+    type: ss
+    server: 138.199.19.154
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 92
+    type: ss
+    server: 138.199.19.134
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 93
+    type: ss
+    server: 138.199.19.177
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 94
+    type: ss
+    server: 138.199.19.164
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 95
+    type: ss
+    server: 185.220.70.83
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 96
+    type: ss
+    server: 138.199.19.190
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 97
+    type: ss
+    server: 138.199.19.192
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 98
+    type: ss
+    server: 156.146.33.73
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 99
+    type: ss
+    server: 89.187.169.119
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 100
+    type: ss
+    server: 138.199.19.149
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 101
+    type: ss
+    server: 185.102.219.47
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 102
+    type: ss
+    server: 156.146.33.83
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 103
+    type: ss
+    server: 156.146.33.75
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 104
+    type: ss
+    server: 37.120.196.61
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 105
+    type: ss
+    server: 156.146.33.69
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 106
+    type: ss
+    server: 45.87.212.215
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 107
+    type: ss
+    server: 138.199.19.169
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 108
+    type: ss
+    server: 138.199.19.188
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 109
+    type: ss
+    server: 138.199.19.137
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 110
+    type: ss
+    server: 37.120.197.11
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 111
+    type: ss
+    server: 138.199.19.142
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+  - name: Germany | 112
+    type: ss
+    server: 37.120.196.171
+    port: "40093"
+    cipher: aes-256-gcm
+    password: x23Z4LGkGDkThZ9Kaz4DURQp
+proxy-groups:
+  - name: 🔰 Select
+    proxies:
+      - Germany | 1
+      - Germany | 2
+      - Germany | 3
+      - Germany | 4
+      - Germany | 5
+      - Germany | 6
+      - Germany | 7
+      - Germany | 8
+      - Germany | 9
+      - Germany | 10
+      - Germany | 11
+      - Germany | 12
+      - Germany | 13
+      - Germany | 14
+      - Germany | 15
+      - Germany | 16
+      - Germany | 17
+      - Germany | 18
+      - Germany | 19
+      - Germany | 20
+      - Germany | 21
+      - Germany | 22
+      - Germany | 23
+      - Germany | 24
+      - Germany | 25
+      - Germany | 26
+      - Germany | 27
+      - Germany | 28
+      - Germany | 29
+      - Germany | 30
+      - Germany | 31
+      - Germany | 32
+      - Germany | 33
+      - Germany | 34
+      - Germany | 35
+      - Germany | 36
+      - Germany | 37
+      - Germany | 38
+      - Germany | 39
+      - Germany | 40
+      - Germany | 41
+      - Germany | 42
+      - Germany | 43
+      - Germany | 44
+      - Germany | 45
+      - Germany | 46
+      - Germany | 47
+      - Germany | 48
+      - Germany | 49
+      - Germany | 50
+      - Germany | 51
+      - Germany | 52
+      - Germany | 53
+      - Germany | 54
+      - Germany | 55
+      - Germany | 56
+      - Germany | 57
+      - Germany | 58
+      - Germany | 59
+      - Germany | 60
+      - Germany | 61
+      - Germany | 62
+      - Germany | 63
+      - Germany | 64
+      - Germany | 65
+      - Germany | 66
+      - Germany | 67
+      - Germany | 68
+      - Germany | 69
+      - Germany | 70
+      - Germany | 71
+      - Germany | 72
+      - Germany | 73
+      - Germany | 74
+      - Germany | 75
+      - Germany | 76
+      - Germany | 77
+      - Germany | 78
+      - Germany | 79
+      - Germany | 80
+      - Germany | 81
+      - Germany | 82
+      - Germany | 83
+      - Germany | 84
+      - Germany | 85
+      - Germany | 86
+      - Germany | 87
+      - Germany | 88
+      - Germany | 89
+      - Germany | 90
+      - Germany | 91
+      - Germany | 92
+      - Germany | 93
+      - Germany | 94
+      - Germany | 95
+      - Germany | 96
+      - Germany | 97
+      - Germany | 98
+      - Germany | 99
+      - Germany | 100
+      - Germany | 101
+      - Germany | 102
+      - Germany | 103
+      - Germany | 104
+      - Germany | 105
+      - Germany | 106
+      - Germany | 107
+      - Germany | 108
+      - Germany | 109
+      - Germany | 110
+      - Germany | 111
+      - Germany | 112
+    type: select
+  - name: ✅ Direct
+    proxies:
+      - DIRECT
+    type: select
+  - name: 🚫 Intercept
+    proxies:
+      - REJECT
+      - DIRECT
+    type: select
+rules:
+  - DOMAIN-SUFFIX,google.com,🔰 Select
+  - DOMAIN-KEYWORD,google,🔰 Select
+  - DOMAIN,google.com,🔰 Select
+  - DOMAIN-SUFFIX,ad.com,🚫 Intercept
+  - SRC-IP-CIDR,192.168.1.201/32,✅ Direct
+  - IP-CIDR,127.0.0.0/8,✅ Direct
+  - GEOIP,IR,✅ Direct
+  - MATCH,🔰 Select
