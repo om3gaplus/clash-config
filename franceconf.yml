@@ -7,735 +7,735 @@ proxies:
   - name: France | 1
     type: ss
     server: 45.89.174.83
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 2
     type: ss
     server: 143.244.57.89
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 3
     type: ss
     server: 84.247.51.251
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 4
     type: ss
     server: 84.247.51.253
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 5
     type: ss
     server: 84.17.60.250
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 6
     type: ss
     server: 143.244.57.117
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 7
     type: ss
     server: 217.138.207.251
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 8
     type: ss
     server: 185.246.211.67
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 9
     type: ss
     server: 84.247.51.235
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 10
     type: ss
     server: 217.138.207.243
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 11
     type: ss
     server: 217.138.207.245
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 12
     type: ss
     server: 45.89.174.99
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 13
     type: ss
     server: 45.83.90.181
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 14
     type: ss
     server: 84.17.43.183
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 15
     type: ss
     server: 143.244.57.97
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 16
     type: ss
     server: 143.244.57.110
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 17
     type: ss
     server: 185.246.211.69
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 18
     type: ss
     server: 143.244.57.114
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 19
     type: ss
     server: 143.244.57.122
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 20
     type: ss
     server: 143.244.57.91
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 21
     type: ss
     server: 143.244.57.112
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 22
     type: ss
     server: 143.244.56.232
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 23
     type: ss
     server: 143.244.57.83
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 24
     type: ss
     server: 143.244.57.119
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 25
     type: ss
     server: 143.244.57.108
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 26
     type: ss
     server: 45.89.174.59
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 27
     type: ss
     server: 143.244.57.106
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 28
     type: ss
     server: 143.244.57.66
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 29
     type: ss
     server: 45.89.174.61
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 30
     type: ss
     server: 84.17.43.185
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 31
     type: ss
     server: 143.244.56.226
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 32
     type: ss
     server: 185.246.211.103
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 33
     type: ss
     server: 45.83.90.183
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 34
     type: ss
     server: 45.89.174.103
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 35
     type: ss
     server: 84.17.60.235
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 36
     type: ss
     server: 143.244.57.85
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 37
     type: ss
     server: 143.244.57.81
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 38
     type: ss
     server: 45.89.174.85
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 39
     type: ss
     server: 143.244.57.101
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 40
     type: ss
     server: 143.244.57.103
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 41
     type: ss
     server: 143.244.56.230
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 42
     type: ss
     server: 143.244.57.99
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 43
     type: ss
     server: 45.83.90.179
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 44
     type: ss
     server: 143.244.57.93
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 45
     type: ss
     server: 143.244.57.87
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 46
     type: ss
     server: 143.244.57.75
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 47
     type: ss
     server: 143.244.57.71
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 48
     type: ss
     server: 143.244.57.73
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 49
     type: ss
     server: 84.247.51.237
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 50
     type: ss
     server: 45.89.174.93
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 51
     type: ss
     server: 185.166.84.95
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 52
     type: ss
     server: 138.199.16.140
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 53
     type: ss
     server: 138.199.16.130
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 54
     type: ss
     server: 138.199.16.137
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 55
     type: ss
     server: 185.166.84.3
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 56
     type: ss
     server: 185.166.84.59
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 57
     type: ss
     server: 138.199.16.142
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 58
     type: ss
     server: 185.166.84.61
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 59
     type: ss
     server: 185.166.84.29
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 60
     type: ss
     server: 185.166.84.75
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 61
     type: ss
     server: 185.166.84.87
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 62
     type: ss
     server: 138.199.16.132
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 63
     type: ss
     server: 138.199.16.150
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 64
     type: ss
     server: 185.166.84.63
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 65
     type: ss
     server: 185.166.84.23
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 66
     type: ss
     server: 138.199.16.147
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 67
     type: ss
     server: 185.166.84.51
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 68
     type: ss
     server: 185.166.84.53
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 69
     type: ss
     server: 185.166.84.65
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 70
     type: ss
     server: 185.166.84.5
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 71
     type: ss
     server: 185.166.84.83
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 72
     type: ss
     server: 185.166.84.81
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 73
     type: ss
     server: 138.199.16.145
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 74
     type: ss
     server: 185.166.84.85
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 75
     type: ss
     server: 185.166.84.79
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 76
     type: ss
     server: 185.166.84.73
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 77
     type: ss
     server: 185.166.84.36
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 78
     type: ss
     server: 185.166.84.77
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 79
     type: ss
     server: 185.166.84.38
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 80
     type: ss
     server: 138.199.16.152
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 81
     type: ss
     server: 185.166.84.55
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 82
     type: ss
     server: 185.166.84.19
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 83
     type: ss
     server: 185.166.84.33
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 84
     type: ss
     server: 138.199.16.135
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 85
     type: ss
     server: 185.166.84.27
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 86
     type: ss
     server: 185.166.84.21
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 87
     type: ss
     server: 185.108.106.160
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 88
     type: ss
     server: 185.108.106.152
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 89
     type: ss
     server: 185.108.106.106
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 90
     type: ss
     server: 185.108.106.162
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 91
     type: ss
     server: 185.108.106.140
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 92
     type: ss
     server: 185.108.106.178
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 93
     type: ss
     server: 185.108.106.21
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 94
     type: ss
     server: 185.108.106.171
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 95
     type: ss
     server: 185.108.106.74
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 96
     type: ss
     server: 185.108.106.150
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 97
     type: ss
     server: 185.108.106.188
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 98
     type: ss
     server: 185.108.106.146
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 99
     type: ss
     server: 185.108.106.89
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 100
     type: ss
     server: 185.108.106.91
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 101
     type: ss
     server: 185.108.106.104
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 102
     type: ss
     server: 185.108.106.51
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 103
     type: ss
     server: 185.108.106.156
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 104
     type: ss
     server: 185.108.106.182
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 105
     type: ss
     server: 185.108.106.158
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 106
     type: ss
     server: 185.108.106.148
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 107
     type: ss
     server: 185.108.106.100
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 108
     type: ss
     server: 185.108.106.69
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 109
     type: ss
     server: 185.108.106.26
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 110
     type: ss
     server: 185.108.106.184
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 111
     type: ss
     server: 185.108.106.72
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 112
     type: ss
     server: 185.108.106.102
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 113
     type: ss
     server: 185.108.106.180
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 114
     type: ss
     server: 185.108.106.24
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 115
     type: ss
     server: 185.108.106.53
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 116
     type: ss
     server: 185.108.106.144
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 117
     type: ss
     server: 185.108.106.174
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 118
     type: ss
     server: 185.108.106.19
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 119
     type: ss
     server: 185.108.106.67
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 120
     type: ss
     server: 185.108.106.169
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 121
     type: ss
     server: 185.108.106.154
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
   - name: France | 122
     type: ss
     server: 185.108.106.186
-    port: "40093"
+    port: "33998"
     cipher: aes-256-gcm
-    password: x23Z4LGkGDkThZ9Kaz4DURQp
+    password: NHwQTPLCfaTMSqTnU3mjcSxe
 
 proxy-groups:
   - name: 🔰 Select
