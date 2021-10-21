@@ -27,115 +27,66 @@ proxies:
     server: 94.20.154.83
     port: "38620"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 1
+    password: Kquv5UhvZXNMemAQy8DxZ7qn  - name: Slovenia | 1
     type: ss
-    server: 196.244.191.43
-    port: "38620"
+    server: 195.158.249.38
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 2
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 2
     type: ss
-    server: 196.244.191.163
-    port: "38620"
+    server: 195.158.249.42
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 3
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 3
     type: ss
-    server: 196.244.191.35
-    port: "38620"
+    server: 195.158.249.36
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 4
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 4
     type: ss
-    server: 196.196.203.101
-    port: "38620"
+    server: 195.158.249.59
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 5
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 5
     type: ss
-    server: 196.244.191.37
-    port: "38620"
+    server: 195.158.249.46
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 6
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 6
     type: ss
-    server: 196.244.191.45
-    port: "38620"
+    server: 195.158.249.48
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 7
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 7
     type: ss
-    server: 196.244.191.91
-    port: "38620"
+    server: 195.158.249.40
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 8
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 8
     type: ss
-    server: 196.244.191.197
-    port: "38620"
+    server: 195.158.249.61
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 9
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 9
     type: ss
-    server: 196.244.191.181
-    port: "38620"
+    server: 195.158.249.50
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 10
+    password: d9adRr9UxymNSysYahMtpFpd
+  - name: Slovenia | 10
     type: ss
-    server: 196.244.191.99
-    port: "38620"
+    server: 195.158.249.52
+    port: "50181"
     cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 11
-    type: ss
-    server: 196.244.191.107
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 12
-    type: ss
-    server: 196.244.191.179
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 13
-    type: ss
-    server: 196.196.203.99
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 14
-    type: ss
-    server: 196.244.191.195
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 15
-    type: ss
-    server: 196.244.191.109
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 16
-    type: ss
-    server: 196.244.191.93
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 17
-    type: ss
-    server: 196.244.191.101
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
-  - name: finland | 18
-    type: ss
-    server: 196.244.191.165
-    port: "38620"
-    cipher: aes-256-gcm
-    password: Kquv5UhvZXNMemAQy8DxZ7qn
+    password: d9adRr9UxymNSysYahMtpFpd
   - name: iceland | 1
     type: ss
     server: 45.133.193.221
@@ -305,24 +256,16 @@ proxy-groups:
       - azerbaijan | 2
       - azerbaijan | 3
       - azerbaijan | 4
-      - finland | 1
-      - finland | 2
-      - finland | 3
-      - finland | 4
-      - finland | 5
-      - finland | 6
-      - finland | 7
-      - finland | 8
-      - finland | 9
-      - finland | 10
-      - finland | 11
-      - finland | 12
-      - finland | 13
-      - finland | 14
-      - finland | 15
-      - finland | 16
-      - finland | 17
-      - finland | 18
+      - Slovenia | 1
+      - Slovenia | 2
+      - Slovenia | 3
+      - Slovenia | 4
+      - Slovenia | 5
+      - Slovenia | 6
+      - Slovenia | 7
+      - Slovenia | 8
+      - Slovenia | 9
+      - Slovenia | 10
       - iceland | 1
       - poland | 1
       - poland | 2
