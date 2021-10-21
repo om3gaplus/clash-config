@@ -28,7 +28,7 @@ proxies:
     port: "38620"
     cipher: aes-256-gcm
     password: Kquv5UhvZXNMemAQy8DxZ7qn
-    - name: Slovenia | 1
+  - name: Slovenia | 1
     type: ss
     server: 195.158.249.38
     port: "50181"
