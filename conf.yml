@@ -250,6 +250,12 @@ proxies:
     port: "38620"
     cipher: aes-256-gcm
     password: Kquv5UhvZXNMemAQy8DxZ7qn
+  - name: mammad
+    type: socks5
+    server: 185.147.212.113
+    port: "1080"
+    username: ek9gjzlJ1O0R
+    password: o1rH8mumC3L
 proxy-groups:
   - name: 🔰 Select
     proxies:
@@ -294,6 +300,7 @@ proxy-groups:
       - Emirates | 8
       - Emirates | 9
       - Emirates | 10
+      - mammad
     type: select
   - name: ✅ Direct
     proxies:
