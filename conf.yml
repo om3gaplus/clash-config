@@ -4,6 +4,12 @@ mode: Global
 log-level: silent
 external-controller: 127.0.0.1:9090
 proxies:
+  - name: use this!✅
+    type: ss
+    server: 156.146.33.86
+    port: "33992"
+    cipher: aes-256-gcm
+    password: 8n6pwAcrrv2pj6tFY2p3TbQ6
   - name: azerbaijan | 1
     type: ss
     server: 62.212.239.45
@@ -259,6 +265,7 @@ proxies:
 proxy-groups:
   - name: 🔰 Select
     proxies:
+      - use this!✅
       - azerbaijan | 1
       - azerbaijan | 2
       - azerbaijan | 3
