@@ -10,6 +10,18 @@ proxies:
     port: "33992"
     cipher: aes-256-gcm
     password: 8n6pwAcrrv2pj6tFY2p3TbQ6
+  - name: and this!✅
+    type: ss
+    server: 156.146.33.66
+    port: "45329"
+    cipher: aes-256-gcm
+    password: CXSjgD7u7Ar7GxkZ4CgTMUsj
+  - name: and this!!✅
+    type: ss
+    server: 195.181.166.225
+    port: "35371"
+    cipher: aes-256-gcm
+    password: pjeDhAJGuML8xKUxcjRqq6a9
   - name: azerbaijan | 1
     type: ss
     server: 62.212.239.45
@@ -266,6 +278,8 @@ proxy-groups:
   - name: 🔰 Select
     proxies:
       - use this!✅
+      - and this!✅
+      - and this!!✅
       - azerbaijan | 1
       - azerbaijan | 2
       - azerbaijan | 3
