@@ -1,20 +1,21 @@
 mixed-port: 7890
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: 127.0.0.1:10100
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
+  listen: 0.0.0.0:53
   enhanced-mode: redir-host
-  default-nameserver:
-    - 8.8.8.8
   nameserver:
-    - https://1.0.0.1/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   fallback:
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
     - 1.1.1.1
-  fallback-filter:
-    geoip: true
+    - 8.8.8.8
 proxies:
   - name: Canada Montreal
     server: 158.51.121.26
@@ -241,6 +242,10 @@ rules:
   - IP-CIDR6,fc00::/7,DIRECT,no-resolve
   - IP-CIDR6,fe80::/10,DIRECT,no-resolve
   - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
   - DOMAIN-SUFFIX,local,DIRECT
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT
