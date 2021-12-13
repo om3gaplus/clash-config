@@ -232,6 +232,8 @@ proxy-groups:
       - US New York
       - US Seattle
 rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
   - MATCH,MENU
   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
   - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
@@ -247,5 +249,3 @@ rules:
   - IP-CIDR,1.1.1.1/32,MENU
   - IP-CIDR,1.0.0.1/32,MENU
   - DOMAIN-SUFFIX,local,DIRECT
-  - DOMAIN-SUFFIX,ir,DIRECT
-  - GEOIP,IR,DIRECT
