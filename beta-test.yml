@@ -231,7 +231,15 @@ proxy-groups:
       - US Miami
       - US New York
       - US Seattle
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
 rules:
+  - RULE-SET,iran,DIRECT
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT
   - MATCH,MENU
