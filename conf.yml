@@ -1,0 +1,259 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - name: Canada Montreal
+    server: 158.51.121.26
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Germany Franfurt
+    server: 135.125.140.32
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Germany Dusseldorf
+    server: 62.141.32.182
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Germany Franfurt2
+    server: 51.195.103.147
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Spain Madrid
+    server: 5.189.222.164
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: France Gravelines
+    server: 51.75.247.24
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: France Paris
+    server: 78.138.52.9
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: France Strasbourg
+    server: 5.196.14.204
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: UK London
+    server: 172.99.190.172
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: UK London2
+    server: 198.244.190.236
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Italy Milan
+    server: 92.223.79.198
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Japan Tokyo
+    server: 194.156.230.30
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Nl Amsterdam
+    server: 190.2.132.238
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Nl Amsterdam2
+    server: 92.38.184.146
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Poland Warsaw
+    server: 5.188.108.155
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: Singapore singapore
+    server: 81.90.189.33
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Atlanta
+    server: 198.244.190.236
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Chicago
+    server: 198.244.190.236
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Chicago2
+    server: 37.9.35.9
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Dallas
+    server: 38.68.135.135
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Denver
+    server: 139.64.165.95
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Los Angeles
+    server: 5.189.222.189
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Miami
+    server: 79.133.109.56
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US New York
+    server: 5.8.41.137
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+  - name: US Seattle
+    server: 169.197.143.178
+    port: 889
+    type: ss
+    cipher: chacha20-ietf-poly1305
+    password: KhS1x8JT7p58RIp7gz
+proxy-groups:
+  - name: MENU
+    type: select
+    proxies:
+      - AUTOMATIC
+      - MANUAL
+  - name: MANUAL
+    type: select
+    proxies:
+      - Canada Montreal
+      - Germany Franfurt
+      - Germany Dusseldorf
+      - Germany Franfurt2
+      - Spain Madrid
+      - France Gravelines
+      - France Paris
+      - France Strasbourg
+      - UK London
+      - UK London2
+      - Italy Milan
+      - Japan Tokyo
+      - Nl Amsterdam
+      - Nl Amsterdam2
+      - Poland Warsaw
+      - Singapore singapore
+      - US Atlanta
+      - US Chicago
+      - US Chicago2
+      - US Dallas
+      - US Denver
+      - US Los Angeles
+      - US Miami
+      - US New York
+      - US Seattle
+  - name: AUTOMATIC
+    type: url-test
+    url: http://connectivitycheck.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - Canada Montreal
+      - Germany Franfurt
+      - Germany Dusseldorf
+      - Germany Franfurt2
+      - Spain Madrid
+      - France Gravelines
+      - France Paris
+      - France Strasbourg
+      - UK London
+      - UK London2
+      - Italy Milan
+      - Japan Tokyo
+      - Nl Amsterdam
+      - Nl Amsterdam2
+      - Poland Warsaw
+      - Singapore singapore
+      - US Atlanta
+      - US Chicago
+      - US Chicago2
+      - US Dallas
+      - US Denver
+      - US Los Angeles
+      - US Miami
+      - US New York
+      - US Seattle
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+rules:
+  - RULE-SET,iran,DIRECT
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
