@@ -17,40 +17,40 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
 proxies:
-  - {name: "Germany  Frankfurt", server: 172.105.244.165, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "Germany2  Frankfurt", server: 172.104.157.118, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "Germany3  Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "Germany4  Frankfurt", server: 139.162.130.101, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "Germany5  Frankfurt", server: 139.162.132.116, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "Germany6  Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "Germany7  Frankfurt", server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "Germany8  Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "Germany9  Frankfurt", server: 139.162.148.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "Germany10  Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "France  Paris", server: 163.172.110.153, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "France2  Paris", server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: "UK  Letchworth Garden City", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "UK2  Letchworth Garden City", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "Germany Frankfurt", server: 172.105.244.165, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany2 Frankfurt", server: 172.104.157.118, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany3 Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany4 Frankfurt", server: 139.162.130.101, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany5 Frankfurt", server: 139.162.132.116, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany6 Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany7 Frankfurt", server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany8 Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "Germany9 Frankfurt", server: 139.162.148.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "Germany10 Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "France Paris", server: 163.172.110.153, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "France2 Paris", server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "UK Letchworth Garden City", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "UK2 Letchworth Garden City", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
   - {name: "Hungary Budapest", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: "Hungary Budapest2", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: "United Kingdom London", server: 92.223.59.188, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "United States California-h", server: 167.88.61.236, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "Italy Milan-h", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "Italy Milan", server: 185.213.21.5, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: "Italy Milan 2", server: 92.223.93.225, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "United States California", server: 167.88.61.236, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Italy Milan", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Italy Milan 2", server: 185.213.21.5, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "Italy Milan 3", server: 92.223.93.225, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "France Normandy", server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
   - {name: "Japan Tokyo", server: 89.31.126.150, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "Japan Tokyo 2", server: 103.140.136.200, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "Germany sseldorf", server: 93.186.201.124, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "Germany sseldorf-h", server: 89.163.140.155, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "Germany sseldorf 2", server: 89.163.140.155, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: "Estonia Tallinn", server: 37.252.5.234, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: "Norway Oslo", server: 194.68.32.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "Isle of Man Douglas-h", server: 37.235.55.84, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Isle of Man Douglas", server: 37.235.55.84, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: "Hong Kong Hong Kong", server: 62.216.92.167, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "New Zealand Auckland", server: 103.62.49.141, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "Russia Moscow", server: 92.38.139.136, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "Russia Moscow-h", server: 62.109.22.113, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "Chile Vina del Mar-h", server: 37.235.52.140, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Russia Moscow 2", server: 62.109.22.113, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Chile Vina del Mar", server: 37.235.52.140, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
 proxy-groups:
   - name: MENU
     type: select
@@ -60,80 +60,80 @@ proxy-groups:
   - name: MANUAL
     type: select
     proxies:
-      - Germany  Frankfurt
-      - Germany2  Frankfurt
-      - Germany3  Frankfurt
-      - Germany4  Frankfurt
-      - Germany5  Frankfurt
-      - Germany6  Frankfurt
-      - Germany7  Frankfurt
-      - Germany8  Frankfurt
-      - Germany9  Frankfurt
-      - Germany10  Frankfurt
-      - France  Paris
-      - France2  Paris
-      - UK  Letchworth Garden City
-      - UK2  Letchworth Garden City
+      - Germany Frankfurt
+      - Germany2 Frankfurt
+      - Germany3 Frankfurt
+      - Germany4 Frankfurt
+      - Germany5 Frankfurt
+      - Germany6 Frankfurt
+      - Germany7 Frankfurt
+      - Germany8 Frankfurt
+      - Germany9 Frankfurt
+      - Germany10 Frankfurt
+      - France Paris
+      - France2 Paris
+      - UK Letchworth Garden City
+      - UK2 Letchworth Garden City
       - Hungary Budapest
       - Hungary Budapest2
       - United Kingdom London
-      - United States California-h
-      - Italy Milan-h
+      - United States California
+      - Italy Milan 3
       - Italy Milan
       - Italy Milan 2
       - France Normandy
       - Japan Tokyo
       - Japan Tokyo 2
       - Germany sseldorf
-      - Germany sseldorf-h
+      - Germany sseldorf 2
       - Estonia Tallinn
       - Norway Oslo
-      - Isle of Man Douglas-h
+      - Isle of Man Douglas
       - Hong Kong Hong Kong
       - New Zealand Auckland
       - Russia Moscow
-      - Russia Moscow-h
-      - Chile Vina del Mar-h
+      - Russia Moscow 2
+      - Chile Vina del Mar
   - name: AUTOMATIC
     type: url-test
     url: http://connectivitycheck.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Germany  Frankfurt
-      - Germany2  Frankfurt
-      - Germany3  Frankfurt
-      - Germany4  Frankfurt
-      - Germany5  Frankfurt
-      - Germany6  Frankfurt
-      - Germany7  Frankfurt
-      - Germany8  Frankfurt
-      - Germany9  Frankfurt
-      - Germany10  Frankfurt
-      - France  Paris
-      - France2  Paris
-      - UK  Letchworth Garden City
-      - UK2  Letchworth Garden City
+      - Germany Frankfurt
+      - Germany2 Frankfurt
+      - Germany3 Frankfurt
+      - Germany4 Frankfurt
+      - Germany5 Frankfurt
+      - Germany6 Frankfurt
+      - Germany7 Frankfurt
+      - Germany8 Frankfurt
+      - Germany9 Frankfurt
+      - Germany10 Frankfurt
+      - France Paris
+      - France2 Paris
+      - UK Letchworth Garden City
+      - UK2 Letchworth Garden City
       - Hungary Budapest
       - Hungary Budapest2
       - United Kingdom London
-      - United States California-h
-      - Italy Milan-h
+      - United States California
+      - Italy Milan 3
       - Italy Milan
       - Italy Milan 2
       - France Normandy
       - Japan Tokyo
       - Japan Tokyo 2
       - Germany sseldorf
-      - Germany sseldorf-h
+      - Germany sseldorf 2
       - Estonia Tallinn
       - Norway Oslo
-      - Isle of Man Douglas-h
+      - Isle of Man Douglas
       - Hong Kong Hong Kong
       - New Zealand Auckland
       - Russia Moscow
-      - Russia Moscow-h
-      - Chile Vina del Mar-h
-rule-providers:
+      - Russia Moscow 2
+      - Chile Vina del Marrule
+providers:
   iran:
     type: http
     behavior: classical
