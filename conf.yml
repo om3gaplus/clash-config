@@ -17,156 +17,20 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
 proxies:
-  - name: Canada Montreal
-    server: 158.51.121.26
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Germany Franfurt
-    server: 135.125.140.32
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Germany Dusseldorf
-    server: 62.141.32.182
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Germany Franfurt2
-    server: 51.195.103.147
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Spain Madrid
-    server: 5.189.222.164
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: France Gravelines
-    server: 51.75.247.24
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: France Paris
-    server: 78.138.52.9
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: France Strasbourg
-    server: 5.196.14.204
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: UK London
-    server: 172.99.190.172
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: UK London2
-    server: 198.244.190.236
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Italy Milan
-    server: 92.223.79.198
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Japan Tokyo
-    server: 194.156.230.30
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Nl Amsterdam
-    server: 190.2.132.238
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Nl Amsterdam2
-    server: 92.38.184.146
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Poland Warsaw
-    server: 5.188.108.155
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: Singapore singapore
-    server: 81.90.189.33
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Atlanta
-    server: 198.244.190.236
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Chicago
-    server: 198.244.190.236
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Chicago2
-    server: 37.9.35.9
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Dallas
-    server: 38.68.135.135
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Denver
-    server: 139.64.165.95
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Los Angeles
-    server: 5.189.222.189
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Miami
-    server: 79.133.109.56
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US New York
-    server: 5.8.41.137
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
-  - name: US Seattle
-    server: 169.197.143.178
-    port: 889
-    type: ss
-    cipher: chacha20-ietf-poly1305
-    password: KhS1x8JT7p58RIp7gz
+  - {name: "Germany  Frankfurt", server: 172.105.244.165, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany2  Frankfurt", server: 172.104.157.118, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany3  Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany4  Frankfurt", server: 139.162.130.101, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany5  Frankfurt", server: 139.162.132.116, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany6  Frankfurt", server: 193.108.118.34, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "Germany7  Frankfurt", server: 217.182.199.168, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "Germany8  Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "Germany9  Frankfurt", server: 139.162.148.39, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "Germany10  Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "France  Paris", server: 163.172.110.153, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "France2  Paris", server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "UK  Letchworth Garden City  ", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "UK2  Letchworth Garden City  ", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: MENU
     type: select
@@ -176,61 +40,39 @@ proxy-groups:
   - name: MANUAL
     type: select
     proxies:
-      - Canada Montreal
-      - Germany Franfurt
-      - Germany Dusseldorf
-      - Germany Franfurt2
-      - Spain Madrid
-      - France Gravelines
-      - France Paris
-      - France Strasbourg
-      - UK London
-      - UK London2
-      - Italy Milan
-      - Japan Tokyo
-      - Nl Amsterdam
-      - Nl Amsterdam2
-      - Poland Warsaw
-      - Singapore singapore
-      - US Atlanta
-      - US Chicago
-      - US Chicago2
-      - US Dallas
-      - US Denver
-      - US Los Angeles
-      - US Miami
-      - US New York
-      - US Seattle
+      - Germany  Frankfurt
+      - Germany2  Frankfurt
+      - Germany3  Frankfurt
+      - Germany4  Frankfurt
+      - Germany5  Frankfurt
+      - Germany6  Frankfurt
+      - Germany7  Frankfurt
+      - Germany8  Frankfurt
+      - Germany9  Frankfurt
+      - Germany10  Frankfurt
+      - France  Paris
+      - France2  Paris
+      -  UK  Letchworth Garden City  
+      -  UK2  Letchworth Garden City  
   - name: AUTOMATIC
     type: url-test
     url: http://connectivitycheck.gstatic.com/generate_204
     interval: 300
     proxies:
-      - Canada Montreal
-      - Germany Franfurt
-      - Germany Dusseldorf
-      - Germany Franfurt2
-      - Spain Madrid
-      - France Gravelines
-      - France Paris
-      - France Strasbourg
-      - UK London
-      - UK London2
-      - Italy Milan
-      - Japan Tokyo
-      - Nl Amsterdam
-      - Nl Amsterdam2
-      - Poland Warsaw
-      - Singapore singapore
-      - US Atlanta
-      - US Chicago
-      - US Chicago2
-      - US Dallas
-      - US Denver
-      - US Los Angeles
-      - US Miami
-      - US New York
-      - US Seattle
+      - Germany  Frankfurt
+      - Germany2  Frankfurt
+      - Germany3  Frankfurt
+      - Germany4  Frankfurt
+      - Germany5  Frankfurt
+      - Germany6  Frankfurt
+      - Germany7  Frankfurt
+      - Germany8  Frankfurt
+      - Germany9  Frankfurt
+      - Germany10  Frankfurt
+      -  France  Paris
+      -  France2  Paris
+      -  UK  Letchworth Garden City  
+      -  UK2  Letchworth Garden City  
 rule-providers:
   iran:
     type: http
@@ -239,7 +81,6 @@ rule-providers:
     path: ./ruleset/iran.yaml
     interval: 432000
 rules:
-  - RULE-SET,iran,DIRECT
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT
   - MATCH,MENU
