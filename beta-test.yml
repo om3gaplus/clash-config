@@ -29,8 +29,8 @@ proxies:
   - {name: "Germany10  Frankfurt", server: 139.162.189.117, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: "France  Paris", server: 163.172.110.153, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "France2  Paris", server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: "UK  Letchworth Garden City  ", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "UK2  Letchworth Garden City  ", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "UK  Letchworth Garden City", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "UK2  Letchworth Garden City", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
 proxy-groups:
   - name: MENU
     type: select
@@ -71,8 +71,8 @@ proxy-groups:
       - Germany10  Frankfurt
       -  France  Paris
       -  France2  Paris
-      -  UK  Letchworth Garden City  
-      -  UK2  Letchworth Garden City  
+      -  UK  Letchworth Garden City
+      -  UK2  Letchworth Garden City
 rule-providers:
   iran:
     type: http
