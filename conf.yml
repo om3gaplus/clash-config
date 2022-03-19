@@ -31,6 +31,26 @@ proxies:
   - {name: "France2  Paris", server: 62.210.113.98, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
   - {name: "UK  Letchworth Garden City", server: 78.129.253.9, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "UK2  Letchworth Garden City", server: 149.7.16.10, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "Hungary Budapest", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "Hungary Budapest2", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "United Kingdom London", server: 92.223.59.188, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "United States California-h", server: 167.88.61.236, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Italy Milan-h", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Italy Milan", server: 185.213.21.5, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "Italy Milan 2", server: 92.223.93.225, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "France Normandy", server: 198.244.150.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563}
+  - {name: "Japan Tokyo", server: 89.31.126.150, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Japan Tokyo 2", server: 103.140.136.200, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Germany sseldorf", server: 93.186.201.124, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Germany sseldorf-h", server: 89.163.140.155, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "Estonia Tallinn", server: 37.252.5.234, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Norway Oslo", server: 194.68.32.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Isle of Man Douglas-h", server: 37.235.55.84, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Hong Kong Hong Kong", server: 62.216.92.167, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "New Zealand Auckland", server: 103.62.49.141, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Russia Moscow", server: 92.38.139.136, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "Russia Moscow-h", server: 62.109.22.113, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "Chile Vina del Mar-h", server: 37.235.52.140, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
 proxy-groups:
   - name: MENU
     type: select
@@ -52,8 +72,28 @@ proxy-groups:
       - Germany10  Frankfurt
       - France  Paris
       - France2  Paris
-      -  UK  Letchworth Garden City  
-      -  UK2  Letchworth Garden City  
+      - UK  Letchworth Garden City
+      - UK2  Letchworth Garden City
+      - Hungary Budapest
+      - Hungary Budapest2
+      - United Kingdom London
+      - United States California-h
+      - Italy Milan-h
+      - Italy Milan
+      - Italy Milan 2
+      - France Normandy
+      - Japan Tokyo
+      - Japan Tokyo 2
+      - Germany sseldorf
+      - Germany sseldorf-h
+      - Estonia Tallinn
+      - Norway Oslo
+      - Isle of Man Douglas-h
+      - Hong Kong Hong Kong
+      - New Zealand Auckland
+      - Russia Moscow
+      - Russia Moscow-h
+      - Chile Vina del Mar-h
   - name: AUTOMATIC
     type: url-test
     url: http://connectivitycheck.gstatic.com/generate_204
@@ -69,10 +109,30 @@ proxy-groups:
       - Germany8  Frankfurt
       - Germany9  Frankfurt
       - Germany10  Frankfurt
-      -  France  Paris
-      -  France2  Paris
-      -  UK  Letchworth Garden City
-      -  UK2  Letchworth Garden City
+      - France  Paris
+      - France2  Paris
+      - UK  Letchworth Garden City
+      - UK2  Letchworth Garden City
+      - Hungary Budapest
+      - Hungary Budapest2
+      - United Kingdom London
+      - United States California-h
+      - Italy Milan-h
+      - Italy Milan
+      - Italy Milan 2
+      - France Normandy
+      - Japan Tokyo
+      - Japan Tokyo 2
+      - Germany sseldorf
+      - Germany sseldorf-h
+      - Estonia Tallinn
+      - Norway Oslo
+      - Isle of Man Douglas-h
+      - Hong Kong Hong Kong
+      - New Zealand Auckland
+      - Russia Moscow
+      - Russia Moscow-h
+      - Chile Vina del Mar-h
 rule-providers:
   iran:
     type: http
@@ -98,4 +158,3 @@ rules:
   - IP-CIDR,1.1.1.1/32,MENU
   - IP-CIDR,1.0.0.1/32,MENU
   - DOMAIN-SUFFIX,local,DIRECT
-
