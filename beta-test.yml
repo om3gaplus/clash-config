@@ -132,8 +132,8 @@ proxy-groups:
       - New Zealand Auckland
       - Russia Moscow
       - Russia Moscow 2
-      - Chile Vina del Marrule
-providers:
+      - Chile Vina del Mar
+rule-providers:
   iran:
     type: http
     behavior: classical
