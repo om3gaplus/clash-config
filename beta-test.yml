@@ -29,13 +29,13 @@ proxies:
   - {name: B&HðŸ‡§ðŸ‡¦NoviTravnik8_10, server: 185.99.3.108, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
   - {name: B&HðŸ‡§ðŸ‡¦NoviTravnik9_11, server: 185.99.3.108, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
   - {name: CYPðŸ‡¨ðŸ‡¾Nicosia_12, server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: GRCðŸ‡¬ðŸ‡·Athens_13, server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+  - {name: GRCðŸ‡¬ðŸ‡·Athens_13, server: 185.51.134.210, port: 8388, type: ss, cipher: aes-256-cfb, password: mTrN2fMYeWJwrkWpTnL2}
   - {name: GRCðŸ‡¬ðŸ‡·Athens2_14, server: 185.243.214.55, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: GRCðŸ‡¬ðŸ‡·Thessaloniki_15, server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: HUNðŸ‡­ðŸ‡ºBudapest_16, server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: HUNðŸ‡­ðŸ‡ºBudapest2_17, server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: ICLðŸ‡®ðŸ‡¸Hafnarfjordur_18, server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: INDðŸ‡®ðŸ‡³Chennai_19, server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+  - {name: INDðŸ‡®ðŸ‡³Chennai_19, server: 169.38.107.52, port: 8389, type: ss, cipher: aes-256-cfb, password: 7D4GYNDaFy4eebe47tvF}
   - {name: INDðŸ‡®ðŸ‡³Jaipur_20, server: 103.129.97.129, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: INDðŸ‡®ðŸ‡³Mumbai_21, server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
   - {name: INDðŸ‡®ðŸ‡³Mumbai2_22, server: 192.46.208.123, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
@@ -64,10 +64,10 @@ proxies:
   - {name: ISRðŸ‡®ðŸ‡±Haifa_45, server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: ISRðŸ‡®ðŸ‡±Haifa2_46, server: 83.229.73.120, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: ISRðŸ‡®ðŸ‡±Haifa3_47, server: 185.162.125.91, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: ISRðŸ‡®ðŸ‡±TelAviv_48, server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: ITAðŸ‡®ðŸ‡¹Milan_49, server: 95.141.37.111, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: ITAðŸ‡®ðŸ‡¹Milan2_50, server: 158.58.173.54, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: ITAðŸ‡®ðŸ‡¹Milan3_51, server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: ISRðŸ‡®ðŸ‡±TelAviv_48, server: 212.199.61.55, port: 8388, type: ss, cipher: aes-256-cfb, password: scDj68fv6xkMg2np9RgW}
+  - {name: ITAðŸ‡®ðŸ‡¹Milan_49, server: 95.141.37.111, port: 812, type: ss, cipher: aes-256-cfb, password: G!yBwPWH3Vao}
+  - {name: ITAðŸ‡®ðŸ‡¹Milan2_50, server: 158.58.173.54, port: 809, type: ss, cipher: aes-256-cfb, password: G!yBwPWH3Vao}
+  - {name: ITAðŸ‡®ðŸ‡¹Milan3_51, server: 158.58.173.240, port: 806, type: ss, cipher: aes-256-cfb, password: G!yBwPWH3Vao}
   - {name: ITAðŸ‡®ðŸ‡¹Milan4_52, server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: ITAðŸ‡®ðŸ‡¹Milan5_53, server: 185.213.21.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
   - {name: LUXðŸ‡±ðŸ‡ºLuxembourg_54, server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
@@ -76,8 +76,8 @@ proxies:
   - {name: SWDðŸ‡¸ðŸ‡ªStockholm_57, server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: SWDðŸ‡¸ðŸ‡ªStockholm2_58, server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
   - {name: SWDðŸ‡¸ðŸ‡ªStockholm3_59, server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: TURðŸ‡¹ðŸ‡·BahÃ§elievler_60, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: TURðŸ‡¹ðŸ‡·Istanbul_61, server: 192.46.209.146, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
+  - {name: TURðŸ‡¹ðŸ‡·BahÃ§elievler_60, server: 185.17.113.234, port: 812, type: ss, cipher: aes-256-cfb, password: G!yBwPWH3Vao}
+  - {name: TURðŸ‡¹ðŸ‡·Istanbul_61, server: 192.46.209.146, port: 443, type: ss, cipher: aes-256-cfb, password: mxler}
   - {name: TURðŸ‡¹ðŸ‡·Istanbul2_62, server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: TURðŸ‡¹ðŸ‡·Istanbul3_63, server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: TURðŸ‡¹ðŸ‡·Istanbul4_64, server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
