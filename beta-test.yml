@@ -20,3 +20,5 @@ proxies:
   - {name: Baku, server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
   - {name: Baku 2, server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: Novi Travnik, server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+
+
