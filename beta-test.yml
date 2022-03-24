@@ -25,7 +25,6 @@ proxies:
   - {name: AUS 🇦🇺 Sydney 4, server: 192.53.169.116, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
   - {name: AUS 🇦🇺 Sydney 5, server: 192.53.169.18, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
   - {name: AUS 🇦🇺 Sydney 6, server: 192.53.168.189, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-
   - {name: UK 🇬🇧 London 39, server: 172.99.190.230, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: UK 🇬🇧 London 40, server: 172.99.190.246, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
   - {name: UK 🇬🇧 London 77, server: 62.216.74.78, port: 16823, type: vmess, uuid: 7455b760-fc67-4898-ae69-afce6eb2a9c0, alterId: 1, cipher: auto, tls: false, skip-cert-verify: false, udp: true}
