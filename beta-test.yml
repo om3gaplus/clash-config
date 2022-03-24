@@ -1,9 +1,21 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
 proxies:
   - {name: "AZR Baku", server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
   - {name: "AZR Baku 2", server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
@@ -64,7 +76,7 @@ proxies:
   - {name: "SWD Stockholm", server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: "SWD Stockholm 2", server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
   - {name: "SWD Stockholm 3", server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "TUR BahÃ§elievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "TUR Bah elievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: "TUR Istanbul", server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
   - {name: "TUR Istanbul 2", server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: "TUR Istanbul 3", server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
@@ -139,7 +151,7 @@ proxy-groups:
       - SWD Stockholm
       - SWD Stockholm 2
       - SWD Stockholm 3
-      - TUR BahÃ§elievler
+      - TUR Bah elievler
       - TUR Istanbul
       - TUR Istanbul 2
       - TUR Istanbul 3
@@ -210,10 +222,35 @@ proxy-groups:
       - SWD Stockholm
       - SWD Stockholm 2
       - SWD Stockholm 3
-      - TUR BahÃ§elievler
+      - TUR Bah elievler
       - TUR Istanbul
       - TUR Istanbul 2
       - TUR Istanbul 3
       - TUR Istanbul 4
       - TUR Istanbul 5
       - TUR Istanbul 6
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
