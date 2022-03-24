@@ -65,7 +65,7 @@ proxies:
   - {"name":"SWD🇸🇪Stockholm2_58","server":"80.67.3.120","port":40503,"type":"ss","cipher":"aes-256-cfb","password":"XS4DBE6"}
   - {"name":"SWD🇸🇪Stockholm3_59","server":"46.246.93.59","port":989,"type":"ss","cipher":"aes-256-cfb","password":"f8f7aCzcPKbsF8p3"}
   - {"name":"TUR🇹🇷Bahçelievler_60","server":"185.17.113.234","port":812,"type":"ss","cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"name":"TUR🇹🇷Istanbul_61","server":"game.m-xler.eu","port":443,"type":"ss","cipher":"xchacha20-ietf-poly1305","password":"mxler"}
+  - {"name":"TUR🇹🇷Istanbul_61","server":"192.46.209.146","port":443,"type":"ss","cipher":"xchacha20-ietf-poly1305","password":"mxler"}
   - {"name":"TUR🇹🇷Istanbul2_62","server":"141.98.119.156","port":50003,"type":"ss","cipher":"aes-256-cfb","password":"8460400130"}
   - {"name":"TUR🇹🇷Istanbul3_63","server":"141.98.119.180","port":50003,"type":"ss","cipher":"aes-256-cfb","password":"8460400130"}
   - {"name":"TUR🇹🇷Istanbul4_64","server":"185.219.134.52","port":50003,"type":"ss","cipher":"aes-256-cfb","password":"8460400130"}
