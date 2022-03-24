@@ -1,40 +1,23 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
+  listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   fallback:
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-  fallback-filter:
-    geoip: true
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
 proxies:
-  - {name: ALB 🇦🇱 Tirana, server: 31.171.153.178, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-   - {name: AZR ðŸ‡¦ðŸ‡¿ Baku, server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
+  - {name: AZR ðŸ‡¦ðŸ‡¿ Baku, server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
   - {name: AZR ðŸ‡¦ðŸ‡¿ Baku 2, server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: B&H ðŸ‡§ðŸ‡¦ Novi Travnik, server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2, server: 185.212.111.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
@@ -94,8 +77,179 @@ proxies:
   - {name: SWD ðŸ‡¸ðŸ‡ª Stockholm 2, server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
   - {name: SWD ðŸ‡¸ðŸ‡ª Stockholm 3, server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
   - {name: TUR ðŸ‡¹ðŸ‡· BahÃ§elievler, server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: TUR ðŸ‡¹ðŸ‡· Istanbul, server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
   - {name: TUR ðŸ‡¹ðŸ‡· Istanbul 2, server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: TUR ðŸ‡¹ðŸ‡· Istanbul 3, server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: TUR ðŸ‡¹ðŸ‡· Istanbul 4, server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
   - {name: TUR ðŸ‡¹ðŸ‡· Istanbul 5, server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: TUR ðŸ‡¹ðŸ‡· Istanbul 6, server: 141.98.119.156, port: 50007, type: ss, cipher: aes-256-cfb, password: 7122910143}
+proxy-groups:
+  - name: MENU
+    type: select
+    proxies:
+      - AUTOMATIC
+      - MANUAL
+  - name: MANUAL
+    type: select
+    proxies:
+      - AZR ðŸ‡¦ðŸ‡¿ Baku
+      - AZR ðŸ‡¦ðŸ‡¿ Baku 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 3
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 4
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 5
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 6
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 7
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 8
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 9
+      - CYP ðŸ‡¨ðŸ‡¾ Nicosia
+      - GRC ðŸ‡¬ðŸ‡· Athens
+      - GRC ðŸ‡¬ðŸ‡· Athens 2
+      - GRC ðŸ‡¬ðŸ‡· Thessaloniki
+      - HUN ðŸ‡­ðŸ‡º Budapest
+      - HUN ðŸ‡­ðŸ‡º Budapest 2
+      - ICL ðŸ‡®ðŸ‡¸ Hafnarfjordur
+      - IND ðŸ‡®ðŸ‡³ Chennai
+      - IND ðŸ‡®ðŸ‡³ Jaipur
+      - IND ðŸ‡®ðŸ‡³ Mumbai
+      - IND ðŸ‡®ðŸ‡³ Mumbai 2
+      - IND ðŸ‡®ðŸ‡³ Mumbai 3
+      - IND ðŸ‡®ðŸ‡³ Mumbai 4
+      - IND ðŸ‡®ðŸ‡³ Mumbai 5
+      - IND ðŸ‡®ðŸ‡³ Mumbai 6
+      - IND ðŸ‡®ðŸ‡³ Mumbai 7
+      - IND ðŸ‡®ðŸ‡³ Mumbai 8
+      - IND ðŸ‡®ðŸ‡³ Mumbai 9
+      - IND ðŸ‡®ðŸ‡³ Mumbai 10
+      - IND ðŸ‡®ðŸ‡³ Mumbai 11
+      - IND ðŸ‡®ðŸ‡³ Mumbai 12
+      - IND ðŸ‡®ðŸ‡³ Mumbai 13
+      - IND ðŸ‡®ðŸ‡³ Mumbai 14
+      - IND ðŸ‡®ðŸ‡³ Mumbai 15
+      - IND ðŸ‡®ðŸ‡³ Mumbai 16
+      - IND ðŸ‡®ðŸ‡³ Mumbai 17
+      - IND ðŸ‡®ðŸ‡³ Mumbai 18
+      - IND ðŸ‡®ðŸ‡³ Mumbai 19
+      - IND ðŸ‡®ðŸ‡³ Mumbai 20
+      - IND ðŸ‡®ðŸ‡³ Mumbai 21
+      - IND ðŸ‡®ðŸ‡³ Mumbai 22
+      - IND ðŸ‡®ðŸ‡³ Mumbai 23
+      - INDO ðŸ‡®ðŸ‡© Jakarta
+      - ISR ðŸ‡®ðŸ‡± Haifa
+      - ISR ðŸ‡®ðŸ‡± Haifa 2
+      - ISR ðŸ‡®ðŸ‡± Haifa 3
+      - ISR ðŸ‡®ðŸ‡± Tel Aviv
+      - ITA ðŸ‡®ðŸ‡¹ Milan
+      - ITA ðŸ‡®ðŸ‡¹ Milan 2
+      - ITA ðŸ‡®ðŸ‡¹ Milan 3
+      - ITA ðŸ‡®ðŸ‡¹ Milan 4
+      - ITA ðŸ‡®ðŸ‡¹ Milan 5
+      - LUX ðŸ‡±ðŸ‡º Luxembourg
+      - MLD ðŸ‡²ðŸ‡© Chisinau
+      - SRB ðŸ‡·ðŸ‡¸ Belgrade
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 2
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 3
+      - TUR ðŸ‡¹ðŸ‡· BahÃ§elievler
+      - TUR ðŸ‡¹ðŸ‡· Istanbul
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 2
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 3
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 4
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 5
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 6
+  - name: AUTOMATIC
+    type: url-test
+    url: http://connectivitycheck.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - AZR ðŸ‡¦ðŸ‡¿ Baku
+      - AZR ðŸ‡¦ðŸ‡¿ Baku 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 3
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 4
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 5
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 6
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 7
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 8
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 9
+      - CYP ðŸ‡¨ðŸ‡¾ Nicosia
+      - GRC ðŸ‡¬ðŸ‡· Athens
+      - GRC ðŸ‡¬ðŸ‡· Athens 2
+      - GRC ðŸ‡¬ðŸ‡· Thessaloniki
+      - HUN ðŸ‡­ðŸ‡º Budapest
+      - HUN ðŸ‡­ðŸ‡º Budapest 2
+      - ICL ðŸ‡®ðŸ‡¸ Hafnarfjordur
+      - IND ðŸ‡®ðŸ‡³ Chennai
+      - IND ðŸ‡®ðŸ‡³ Jaipur
+      - IND ðŸ‡®ðŸ‡³ Mumbai
+      - IND ðŸ‡®ðŸ‡³ Mumbai 2
+      - IND ðŸ‡®ðŸ‡³ Mumbai 3
+      - IND ðŸ‡®ðŸ‡³ Mumbai 4
+      - IND ðŸ‡®ðŸ‡³ Mumbai 5
+      - IND ðŸ‡®ðŸ‡³ Mumbai 6
+      - IND ðŸ‡®ðŸ‡³ Mumbai 7
+      - IND ðŸ‡®ðŸ‡³ Mumbai 8
+      - IND ðŸ‡®ðŸ‡³ Mumbai 9
+      - IND ðŸ‡®ðŸ‡³ Mumbai 10
+      - IND ðŸ‡®ðŸ‡³ Mumbai 11
+      - IND ðŸ‡®ðŸ‡³ Mumbai 12
+      - IND ðŸ‡®ðŸ‡³ Mumbai 13
+      - IND ðŸ‡®ðŸ‡³ Mumbai 14
+      - IND ðŸ‡®ðŸ‡³ Mumbai 15
+      - IND ðŸ‡®ðŸ‡³ Mumbai 16
+      - IND ðŸ‡®ðŸ‡³ Mumbai 17
+      - IND ðŸ‡®ðŸ‡³ Mumbai 18
+      - IND ðŸ‡®ðŸ‡³ Mumbai 19
+      - IND ðŸ‡®ðŸ‡³ Mumbai 20
+      - IND ðŸ‡®ðŸ‡³ Mumbai 21
+      - IND ðŸ‡®ðŸ‡³ Mumbai 22
+      - IND ðŸ‡®ðŸ‡³ Mumbai 23
+      - INDO ðŸ‡®ðŸ‡© Jakarta
+      - ISR ðŸ‡®ðŸ‡± Haifa
+      - ISR ðŸ‡®ðŸ‡± Haifa 2
+      - ISR ðŸ‡®ðŸ‡± Haifa 3
+      - ISR ðŸ‡®ðŸ‡± Tel Aviv
+      - ITA ðŸ‡®ðŸ‡¹ Milan
+      - ITA ðŸ‡®ðŸ‡¹ Milan 2
+      - ITA ðŸ‡®ðŸ‡¹ Milan 3
+      - ITA ðŸ‡®ðŸ‡¹ Milan 4
+      - ITA ðŸ‡®ðŸ‡¹ Milan 5
+      - LUX ðŸ‡±ðŸ‡º Luxembourg
+      - MLD ðŸ‡²ðŸ‡© Chisinau
+      - SRB ðŸ‡·ðŸ‡¸ Belgrade
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 2
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 3
+      - TUR ðŸ‡¹ðŸ‡· BahÃ§elievler
+      - TUR ðŸ‡¹ðŸ‡· Istanbul
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 2
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 3
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 4
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 5
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 6
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
