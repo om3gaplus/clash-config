@@ -18,6 +18,7 @@ dns:
     - 8.8.8.8
 proxies:
   - {name: AZR ðŸ‡¦ðŸ‡¿ Baku, server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: f3135771619}
+  
   - {name: ARG 🇦🇷 Buenos Aires, server: 131.255.4.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: AUS 🇦🇺 Sydney, server: 194.14.208.110, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: AUS 🇦🇺 Sydney 2, server: 194.14.208.111, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
