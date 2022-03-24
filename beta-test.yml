@@ -1,88 +1,76 @@
-mixed-port: 7890
-allow-lan: false
-mode: Global
-log-level: silent
-external-controller: 127.0.0.1:9090
-dns:
-  enable: true
-  ipv6: false
-  listen: 0.0.0.0:53
-  enhanced-mode: redir-host
-  nameserver:
-    - https://1.1.1.1/dns-query
-    - https://8.8.8.8/dns-query
-  fallback:
-    - https://1.0.0.1/dns-query
-    - https://8.8.4.4/dns-query
-    - 1.1.1.1
-    - 8.8.8.8
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
 proxies:
-  - {name: "AZR Baku", server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
-  - {name: "AZR Baku 2", server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "B&H Novi Travnik", server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "B&H Novi Travnik 2", server: 185.212.111.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: "B&H Novi Travnik 3", server: 185.99.3.205, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
-  - {name: "B&H Novi Travnik 4", server: 185.212.111.59, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: "B&H Novi Travnik 5", server: 185.99.3.214, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: "B&H Novi Travnik 6", server: 185.99.3.108, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: "B&H Novi Travnik 7", server: 185.99.3.108, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
-  - {name: "B&H Novi Travnik 8", server: 185.99.3.108, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
-  - {name: "B&H Novi Travnik 9", server: 185.99.3.108, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
-  - {name: "CYP Nicosia", server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "GRC Athens", server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
-  - {name: "GRC Athens 2", server: 185.243.214.55, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "GRC Thessaloniki", server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "HUN Budapest", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "HUN Budapest 2", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "ICL Hafnarfjordur", server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "IND Chennai", server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
-  - {name: "IND Jaipur", server: 103.129.97.129, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "IND Mumbai", server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: "IND Mumbai 2", server: 192.46.208.123, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "IND Mumbai 3", server: 192.46.208.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "IND Mumbai 4", server: 192.46.209.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "IND Mumbai 5", server: 192.46.212.33, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "IND Mumbai 6", server: 192.46.208.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "IND Mumbai 7", server: 192.46.208.153, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "IND Mumbai 8", server: 192.46.212.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "IND Mumbai 9", server: 192.46.212.33, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: "IND Mumbai 10", server: 192.46.208.123, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: "IND Mumbai 11", server: 192.46.209.146, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: "IND Mumbai 12", server: 192.46.208.153, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: "IND Mumbai 13", server: 192.46.209.146, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
-  - {name: "IND Mumbai 14", server: 192.46.208.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "IND Mumbai 15", server: 192.46.209.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "IND Mumbai 16", server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "IND Mumbai 17", server: 192.46.208.153, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: "IND Mumbai 18", server: 192.46.209.146, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
-  - {name: "IND Mumbai 19", server: 192.46.208.123, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "IND Mumbai 20", server: 192.46.208.153, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "IND Mumbai 21", server: 192.46.208.153, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: "IND Mumbai 22", server: 192.46.209.215, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: "IND Mumbai 23", server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: "INDO Jakarta", server: 103.84.192.228, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "ISR Haifa", server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "ISR Haifa 2", server: 83.229.73.120, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "ISR Haifa 3", server: 185.162.125.91, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "ISR Tel Aviv", server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
-  - {name: "ITA Milan", server: 95.141.37.111, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "ITA Milan 2", server: 158.58.173.54, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "ITA Milan 3", server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "ITA Milan 4", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "ITA Milan 5", server: 185.213.21.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "LUX Luxembourg", server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "MLD Chisinau", server: 192.121.87.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "SRB Belgrade", server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "SWD Stockholm", server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "SWD Stockholm 2", server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
-  - {name: "SWD Stockholm 3", server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
-  - {name: "TUR Bah elievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "TUR Istanbul", server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
-  - {name: "TUR Istanbul 2", server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "TUR Istanbul 3", server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "TUR Istanbul 4", server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "TUR Istanbul 5", server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
-  - {name: "TUR Istanbul 6", server: 141.98.119.156, port: 50007, type: ss, cipher: aes-256-cfb, password: 7122910143}
+  - {name: "AZR-Baku", server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
+  - {name: "AZR-Baku-2", server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "B&H-Novi-Travnik", server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "B&H-Novi-Travnik-2", server: 185.212.111.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "B&H-Novi-Travnik-3", server: 185.99.3.205, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "B&H-Novi-Travnik-4", server: 185.212.111.59, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: "B&H-Novi-Travnik-5", server: 185.99.3.214, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: "B&H-Novi-Travnik-6", server: 185.99.3.108, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "B&H-Novi-Travnik-7", server: 185.99.3.108, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: "B&H-Novi-Travnik-8", server: 185.99.3.108, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "B&H-Novi-Travnik-9", server: 185.99.3.108, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: "CYP-Nicosia", server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "GRC-Athens", server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+  - {name: "GRC-Athens-2", server: 185.243.214.55, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "GRC-Thessaloniki", server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "HUN-Budapest", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "HUN-Budapest-2", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ICL-Hafnarfjordur", server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "IND-Chennai", server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+  - {name: "IND-Jaipur", server: 103.129.97.129, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "IND-Mumbai", server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "IND-Mumbai-2", server: 192.46.208.123, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "IND-Mumbai-3", server: 192.46.208.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "IND-Mumbai-4", server: 192.46.209.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "IND-Mumbai-5", server: 192.46.212.33, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "IND-Mumbai-6", server: 192.46.208.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "IND-Mumbai-7", server: 192.46.208.153, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "IND-Mumbai-8", server: 192.46.212.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "IND-Mumbai-9", server: 192.46.212.33, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "IND-Mumbai-10", server: 192.46.208.123, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "IND-Mumbai-11", server: 192.46.209.146, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "IND-Mumbai-12", server: 192.46.208.153, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "IND-Mumbai-13", server: 192.46.209.146, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "IND-Mumbai-14", server: 192.46.208.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "IND-Mumbai-15", server: 192.46.209.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "IND-Mumbai-16", server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "IND-Mumbai-17", server: 192.46.208.153, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "IND-Mumbai-18", server: 192.46.209.146, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "IND-Mumbai-19", server: 192.46.208.123, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "IND-Mumbai-20", server: 192.46.208.153, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "IND-Mumbai-21", server: 192.46.208.153, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "IND-Mumbai-22", server: 192.46.209.215, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "IND-Mumbai-23", server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "INDO-Jakarta", server: 103.84.192.228, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "ISR-Haifa", server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR-Haifa-2", server: 83.229.73.120, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR-Haifa-3", server: 185.162.125.91, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR-Tel-Aviv", server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: "ITA-Milan", server: 95.141.37.111, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA-Milan-2", server: 158.58.173.54, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA-Milan-3", server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA-Milan-4", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "ITA-Milan-5", server: 185.213.21.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "LUX-Luxembourg", server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "MLD-Chisinau", server: 192.121.87.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "SRB-Belgrade", server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "SWD-Stockholm", server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "SWD-Stockholm-2", server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
+  - {name: "SWD-Stockholm-3", server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "TUR-Bah-elievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "TUR-Istanbul", server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
+  - {name: "TUR-Istanbul-2", server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR-Istanbul-3", server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR-Istanbul-4", server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR-Istanbul-5", server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR-Istanbul-6", server: 141.98.119.156, port: 50007, type: ss, cipher: aes-256-cfb, password: 7122910143}
 proxy-groups:
   - name: MENU
     type: select
@@ -92,143 +80,143 @@ proxy-groups:
   - name: MANUAL
     type: select
     proxies:
-      - AZR Baku
-      - AZR Baku 2
-      - B&H Novi Travnik
-      - B&H Novi Travnik 2
-      - B&H Novi Travnik 3
-      - B&H Novi Travnik 4
-      - B&H Novi Travnik 5
-      - B&H Novi Travnik 6
-      - B&H Novi Travnik 7
-      - B&H Novi Travnik 8
-      - B&H Novi Travnik 9
-      - CYP Nicosia
-      - GRC Athens
-      - GRC Athens 2
-      - GRC Thessaloniki
-      - HUN Budapest
-      - HUN Budapest 2
-      - ICL Hafnarfjordur
-      - IND Chennai
-      - IND Jaipur
-      - IND Mumbai
-      - IND Mumbai 2
-      - IND Mumbai 3
-      - IND Mumbai 4
-      - IND Mumbai 5
-      - IND Mumbai 6
-      - IND Mumbai 7
-      - IND Mumbai 8
-      - IND Mumbai 9
-      - IND Mumbai 10
-      - IND Mumbai 11
-      - IND Mumbai 12
-      - IND Mumbai 13
-      - IND Mumbai 14
-      - IND Mumbai 15
-      - IND Mumbai 16
-      - IND Mumbai 17
-      - IND Mumbai 18
-      - IND Mumbai 19
-      - IND Mumbai 20
-      - IND Mumbai 21
-      - IND Mumbai 22
-      - IND Mumbai 23
-      - INDO Jakarta
-      - ISR Haifa
-      - ISR Haifa 2
-      - ISR Haifa 3
-      - ISR Tel Aviv
-      - ITA Milan
-      - ITA Milan 2
-      - ITA Milan 3
-      - ITA Milan 4
-      - ITA Milan 5
-      - LUX Luxembourg
-      - MLD Chisinau
-      - SRB Belgrade
-      - SWD Stockholm
-      - SWD Stockholm 2
-      - SWD Stockholm 3
-      - TUR Bah elievler
-      - TUR Istanbul
-      - TUR Istanbul 2
-      - TUR Istanbul 3
-      - TUR Istanbul 4
-      - TUR Istanbul 5
-      - TUR Istanbul 6
+      - AZR-Baku
+      - AZR-Baku-2
+      - B&H-Novi-Travnik
+      - B&H-Novi-Travnik-2
+      - B&H-Novi-Travnik-3
+      - B&H-Novi-Travnik-4
+      - B&H-Novi-Travnik-5
+      - B&H-Novi-Travnik-6
+      - B&H-Novi-Travnik-7
+      - B&H-Novi-Travnik-8
+      - B&H-Novi-Travnik-9
+      - CYP-Nicosia
+      - GRC-Athens
+      - GRC-Athens-2
+      - GRC-Thessaloniki
+      - HUN-Budapest
+      - HUN-Budapest-2
+      - ICL-Hafnarfjordur
+      - IND-Chennai
+      - IND-Jaipur
+      - IND-Mumbai
+      - IND-Mumbai-2
+      - IND-Mumbai-3
+      - IND-Mumbai-4
+      - IND-Mumbai-5
+      - IND-Mumbai-6
+      - IND-Mumbai-7
+      - IND-Mumbai-8
+      - IND-Mumbai-9
+      - IND-Mumbai-10
+      - IND-Mumbai-11
+      - IND-Mumbai-12
+      - IND-Mumbai-13
+      - IND-Mumbai-14
+      - IND-Mumbai-15
+      - IND-Mumbai-16
+      - IND-Mumbai-17
+      - IND-Mumbai-18
+      - IND-Mumbai-19
+      - IND-Mumbai-20
+      - IND-Mumbai-21
+      - IND-Mumbai-22
+      - IND-Mumbai-23
+      - INDO-Jakarta
+      - ISR-Haifa
+      - ISR-Haifa-2
+      - ISR-Haifa-3
+      - ISR-Tel-Aviv
+      - ITA-Milan
+      - ITA-Milan-2
+      - ITA-Milan-3
+      - ITA-Milan-4
+      - ITA-Milan-5
+      - LUX-Luxembourg
+      - MLD-Chisinau
+      - SRB-Belgrade
+      - SWD-Stockholm
+      - SWD-Stockholm-2
+      - SWD-Stockholm-3
+      - TUR-Bah-elievler
+      - TUR-Istanbul
+      - TUR-Istanbul-2
+      - TUR-Istanbul-3
+      - TUR-Istanbul-4
+      - TUR-Istanbul-5
+      - TUR-Istanbul-6
   - name: AUTOMATIC
     type: url-test
     url: http://connectivitycheck.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AZR Baku
-      - AZR Baku 2
-      - B&H Novi Travnik
-      - B&H Novi Travnik 2
-      - B&H Novi Travnik 3
-      - B&H Novi Travnik 4
-      - B&H Novi Travnik 5
-      - B&H Novi Travnik 6
-      - B&H Novi Travnik 7
-      - B&H Novi Travnik 8
-      - B&H Novi Travnik 9
-      - CYP Nicosia
-      - GRC Athens
-      - GRC Athens 2
-      - GRC Thessaloniki
-      - HUN Budapest
-      - HUN Budapest 2
-      - ICL Hafnarfjordur
-      - IND Chennai
-      - IND Jaipur
-      - IND Mumbai
-      - IND Mumbai 2
-      - IND Mumbai 3
-      - IND Mumbai 4
-      - IND Mumbai 5
-      - IND Mumbai 6
-      - IND Mumbai 7
-      - IND Mumbai 8
-      - IND Mumbai 9
-      - IND Mumbai 10
-      - IND Mumbai 11
-      - IND Mumbai 12
-      - IND Mumbai 13
-      - IND Mumbai 14
-      - IND Mumbai 15
-      - IND Mumbai 16
-      - IND Mumbai 17
-      - IND Mumbai 18
-      - IND Mumbai 19
-      - IND Mumbai 20
-      - IND Mumbai 21
-      - IND Mumbai 22
-      - IND Mumbai 23
-      - INDO Jakarta
-      - ISR Haifa
-      - ISR Haifa 2
-      - ISR Haifa 3
-      - ISR Tel Aviv
-      - ITA Milan
-      - ITA Milan 2
-      - ITA Milan 3
-      - ITA Milan 4
-      - ITA Milan 5
-      - LUX Luxembourg
-      - MLD Chisinau
-      - SRB Belgrade
-      - SWD Stockholm
-      - SWD Stockholm 2
-      - SWD Stockholm 3
-      - TUR Bah elievler
-      - TUR Istanbul
-      - TUR Istanbul 2
-      - TUR Istanbul 3
-      - TUR Istanbul 4
-      - TUR Istanbul 5
-      - TUR Istanbul 6
+      - AZR-Baku
+      - AZR-Baku-2
+      - B&H-Novi-Travnik
+      - B&H-Novi-Travnik-2
+      - B&H-Novi-Travnik-3
+      - B&H-Novi-Travnik-4
+      - B&H-Novi-Travnik-5
+      - B&H-Novi-Travnik-6
+      - B&H-Novi-Travnik-7
+      - B&H-Novi-Travnik-8
+      - B&H-Novi-Travnik-9
+      - CYP-Nicosia
+      - GRC-Athens
+      - GRC-Athens-2
+      - GRC-Thessaloniki
+      - HUN-Budapest
+      - HUN-Budapest-2
+      - ICL-Hafnarfjordur
+      - IND-Chennai
+      - IND-Jaipur
+      - IND-Mumbai
+      - IND-Mumbai-2
+      - IND-Mumbai-3
+      - IND-Mumbai-4
+      - IND-Mumbai-5
+      - IND-Mumbai-6
+      - IND-Mumbai-7
+      - IND-Mumbai-8
+      - IND-Mumbai-9
+      - IND-Mumbai-10
+      - IND-Mumbai-11
+      - IND-Mumbai-12
+      - IND-Mumbai-13
+      - IND-Mumbai-14
+      - IND-Mumbai-15
+      - IND-Mumbai-16
+      - IND-Mumbai-17
+      - IND-Mumbai-18
+      - IND-Mumbai-19
+      - IND-Mumbai-20
+      - IND-Mumbai-21
+      - IND-Mumbai-22
+      - IND-Mumbai-23
+      - INDO-Jakarta
+      - ISR-Haifa
+      - ISR-Haifa-2
+      - ISR-Haifa-3
+      - ISR-Tel-Aviv
+      - ITA-Milan
+      - ITA-Milan-2
+      - ITA-Milan-3
+      - ITA-Milan-4
+      - ITA-Milan-5
+      - LUX-Luxembourg
+      - MLD-Chisinau
+      - SRB-Belgrade
+      - SWD-Stockholm
+      - SWD-Stockholm-2
+      - SWD-Stockholm-3
+      - TUR-Bah-elievler
+      - TUR-Istanbul
+      - TUR-Istanbul-2
+      - TUR-Istanbul-3
+      - TUR-Istanbul-4
+      - TUR-Istanbul-5
+      - TUR-Istanbul-6
 rule-providers:
   iran:
     type: http
