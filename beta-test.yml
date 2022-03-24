@@ -1,51 +1,256 @@
-port: 7890
-socks-port: 7891
-allow-lan: true
-mode: Rule
-log-level: info
-external-controller: :9090
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
 dns:
   enable: true
   ipv6: false
+  listen: 0.0.0.0:53
   enhanced-mode: redir-host
   nameserver:
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
   fallback:
-    - https://EU2.DNS.LAVATE.CH/dns-query
-    - https://DNS.HeN.ee/dns-query
-    - https://NoTMIKE.dev/dns.php
-    - tls://dns.google:853
-    - https://dns.google/dns-query
-    - https://cloudflare-dns.com/dns-query
-    - https://dns.adguard.com/dns-query
-    - https://dnsforge.de/dns-query
-    - https://dns.quad9.net/dns-query
-    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
-  fallback-filter:
-    geoip: true
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
 proxies:
-  - {name: ALB 🇦🇱 Tirana, server: 31.171.153.178, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: ARG 🇦🇷 Buenos Aires, server: 131.255.4.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: AUS 🇦🇺 Sydney, server: 194.14.208.110, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: AUS 🇦🇺 Sydney 2, server: 194.14.208.111, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: AUS 🇦🇺 Sydney 3, server: 192.53.168.189, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: AUS 🇦🇺 Sydney 4, server: 192.53.169.116, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: AUS 🇦🇺 Sydney 5, server: 192.53.169.18, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: AUS 🇦🇺 Sydney 6, server: 192.53.168.189, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
-  - {name: AUS 🇦🇺 Sydney 7, server: 192.53.169.18, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
-  - {name: AUS 🇦🇺 Sydney 8, server: 192.53.169.116, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
-  - {name: AUS 🇦🇺 Sydney 9, server: 192.53.168.189, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
-  - {name: AUS 🇦🇺 Sydney 10, server: 192.53.168.189, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AUS 🇦🇺 Sydney 11, server: 192.53.169.18, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
-  - {name: AZR 🇦🇿 Baku, server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619, udp: true}
-  - {name: AZR 🇦🇿 Baku 2, server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
-  - {name: B&H 🇧🇦 Novi Travnik, server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: "AZR ðŸ‡¦ðŸ‡¿ Baku", server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
+      - {name: "AZR ðŸ‡¦ðŸ‡¿ Baku 2", server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik", server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2", server: 185.212.111.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 3", server: 185.99.3.205, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 4", server: 185.212.111.59, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 5", server: 185.99.3.214, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 6", server: 185.99.3.108, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 7", server: 185.99.3.108, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 8", server: 185.99.3.108, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+      - {name: "B&H ðŸ‡§ðŸ‡¦ Novi Travnik 9", server: 185.99.3.108, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+      - {name: "CYP ðŸ‡¨ðŸ‡¾ Nicosia", server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "GRC ðŸ‡¬ðŸ‡· Athens", server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+      - {name: "GRC ðŸ‡¬ðŸ‡· Athens 2", server: 185.243.214.55, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "GRC ðŸ‡¬ðŸ‡· Thessaloniki", server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "HUN ðŸ‡­ðŸ‡º Budapest", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "HUN ðŸ‡­ðŸ‡º Budapest 2", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "ICL ðŸ‡®ðŸ‡¸ Hafnarfjordur", server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "IND ðŸ‡®ðŸ‡³ Chennai", server: 169.38.107.52, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: 7D4GYNDaFy4eebe47tvF}
+      - {name: "IND ðŸ‡®ðŸ‡³ Jaipur", server: 103.129.97.129, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai", server: 192.46.210.73, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 2", server: 192.46.208.123, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 3", server: 192.46.208.123, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 4", server: 192.46.209.146, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 5", server: 192.46.212.33, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 6", server: 192.46.208.123, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 7", server: 192.46.208.153, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 8", server: 192.46.212.33, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 9", server: 192.46.212.33, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 10", server: 192.46.208.123, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 11", server: 192.46.209.146, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 12", server: 192.46.208.153, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 13", server: 192.46.209.146, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 14", server: 192.46.208.123, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 15", server: 192.46.209.146, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 16", server: 192.46.210.73, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 17", server: 192.46.208.153, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 18", server: 192.46.209.146, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 19", server: 192.46.208.123, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 20", server: 192.46.208.153, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 21", server: 192.46.208.153, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 22", server: 192.46.209.215, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+      - {name: "IND ðŸ‡®ðŸ‡³ Mumbai 23", server: 192.46.210.73, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+      - {name: "INDO ðŸ‡®ðŸ‡© Jakarta", server: 103.84.192.228, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "ISR ðŸ‡®ðŸ‡± Haifa", server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "ISR ðŸ‡®ðŸ‡± Haifa 2", server: 83.229.73.120, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "ISR ðŸ‡®ðŸ‡± Haifa 3", server: 185.162.125.91, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "ISR ðŸ‡®ðŸ‡± Tel Aviv", server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+      - {name: "ITA ðŸ‡®ðŸ‡¹ Milan", server: 95.141.37.111, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+      - {name: "ITA ðŸ‡®ðŸ‡¹ Milan 2", server: 158.58.173.54, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+      - {name: "ITA ðŸ‡®ðŸ‡¹ Milan 3", server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+      - {name: "ITA ðŸ‡®ðŸ‡¹ Milan 4", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "ITA ðŸ‡®ðŸ‡¹ Milan 5", server: 185.213.21.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+      - {name: "LUX ðŸ‡±ðŸ‡º Luxembourg", server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "MLD ðŸ‡²ðŸ‡© Chisinau", server: 192.121.87.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "SRB ðŸ‡·ðŸ‡¸ Belgrade", server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "SWD ðŸ‡¸ðŸ‡ª Stockholm", server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "SWD ðŸ‡¸ðŸ‡ª Stockholm 2", server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
+      - {name: "SWD ðŸ‡¸ðŸ‡ª Stockholm 3", server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+      - {name: "TUR ðŸ‡¹ðŸ‡· BahÃ§elievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul", server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul 2", server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul 3", server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul 4", server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul 5", server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+      - {name: "TUR ðŸ‡¹ðŸ‡· Istanbul 6", server: 141.98.119.156, port: 50007, type: ss, cipher: aes-256-cfb, password: 7122910143}
+    proxy-groups:
+  - name: MENU
+    type: select
+    proxies:
+      - AUTOMATIC
+      - MANUAL
+  - name: MANUAL
+    type: select
+    proxies:
+      - AZR ðŸ‡¦ðŸ‡¿ Baku
+          - AZR ðŸ‡¦ðŸ‡¿ Baku 2
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 3
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 4
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 5
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 6
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 7
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 8
+          - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 9
+          - CYP ðŸ‡¨ðŸ‡¾ Nicosia
+          - GRC ðŸ‡¬ðŸ‡· Athens
+          - GRC ðŸ‡¬ðŸ‡· Athens 2
+          - GRC ðŸ‡¬ðŸ‡· Thessaloniki
+          - HUN ðŸ‡­ðŸ‡º Budapest
+          - HUN ðŸ‡­ðŸ‡º Budapest 2
+          - ICL ðŸ‡®ðŸ‡¸ Hafnarfjordur
+          - IND ðŸ‡®ðŸ‡³ Chennai
+          - IND ðŸ‡®ðŸ‡³ Jaipur
+          - IND ðŸ‡®ðŸ‡³ Mumbai
+          - IND ðŸ‡®ðŸ‡³ Mumbai 2
+          - IND ðŸ‡®ðŸ‡³ Mumbai 3
+          - IND ðŸ‡®ðŸ‡³ Mumbai 4
+          - IND ðŸ‡®ðŸ‡³ Mumbai 5
+          - IND ðŸ‡®ðŸ‡³ Mumbai 6
+          - IND ðŸ‡®ðŸ‡³ Mumbai 7
+          - IND ðŸ‡®ðŸ‡³ Mumbai 8
+          - IND ðŸ‡®ðŸ‡³ Mumbai 9
+          - IND ðŸ‡®ðŸ‡³ Mumbai 10
+          - IND ðŸ‡®ðŸ‡³ Mumbai 11
+          - IND ðŸ‡®ðŸ‡³ Mumbai 12
+          - IND ðŸ‡®ðŸ‡³ Mumbai 13
+          - IND ðŸ‡®ðŸ‡³ Mumbai 14
+          - IND ðŸ‡®ðŸ‡³ Mumbai 15
+          - IND ðŸ‡®ðŸ‡³ Mumbai 16
+          - IND ðŸ‡®ðŸ‡³ Mumbai 17
+          - IND ðŸ‡®ðŸ‡³ Mumbai 18
+          - IND ðŸ‡®ðŸ‡³ Mumbai 19
+          - IND ðŸ‡®ðŸ‡³ Mumbai 20
+          - IND ðŸ‡®ðŸ‡³ Mumbai 21
+          - IND ðŸ‡®ðŸ‡³ Mumbai 22
+          - IND ðŸ‡®ðŸ‡³ Mumbai 23
+          - INDO ðŸ‡®ðŸ‡© Jakarta
+          - ISR ðŸ‡®ðŸ‡± Haifa
+          - ISR ðŸ‡®ðŸ‡± Haifa 2
+          - ISR ðŸ‡®ðŸ‡± Haifa 3
+          - ISR ðŸ‡®ðŸ‡± Tel Aviv
+          - ITA ðŸ‡®ðŸ‡¹ Milan
+          - ITA ðŸ‡®ðŸ‡¹ Milan 2
+          - ITA ðŸ‡®ðŸ‡¹ Milan 3
+          - ITA ðŸ‡®ðŸ‡¹ Milan 4
+          - ITA ðŸ‡®ðŸ‡¹ Milan 5
+          - LUX ðŸ‡±ðŸ‡º Luxembourg
+          - MLD ðŸ‡²ðŸ‡© Chisinau
+          - SRB ðŸ‡·ðŸ‡¸ Belgrade
+          - SWD ðŸ‡¸ðŸ‡ª Stockholm
+          - SWD ðŸ‡¸ðŸ‡ª Stockholm 2
+          - SWD ðŸ‡¸ðŸ‡ª Stockholm 3
+          - TUR ðŸ‡¹ðŸ‡· BahÃ§elievler
+          - TUR ðŸ‡¹ðŸ‡· Istanbul
+          - TUR ðŸ‡¹ðŸ‡· Istanbul 2
+          - TUR ðŸ‡¹ðŸ‡· Istanbul 3
+          - TUR ðŸ‡¹ðŸ‡· Istanbul 4
+          - TUR ðŸ‡¹ðŸ‡· Istanbul 5
+          - TUR ðŸ‡¹ðŸ‡· Istanbul 6
+      - name: AUTOMATIC
+    type: url-test
+    url: http://connectivitycheck.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - AZR ðŸ‡¦ðŸ‡¿ Baku
+      - AZR ðŸ‡¦ðŸ‡¿ Baku 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 2
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 3
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 4
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 5
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 6
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 7
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 8
+      - B&H ðŸ‡§ðŸ‡¦ Novi Travnik 9
+      - CYP ðŸ‡¨ðŸ‡¾ Nicosia
+      - GRC ðŸ‡¬ðŸ‡· Athens
+      - GRC ðŸ‡¬ðŸ‡· Athens 2
+      - GRC ðŸ‡¬ðŸ‡· Thessaloniki
+      - HUN ðŸ‡­ðŸ‡º Budapest
+      - HUN ðŸ‡­ðŸ‡º Budapest 2
+      - ICL ðŸ‡®ðŸ‡¸ Hafnarfjordur
+      - IND ðŸ‡®ðŸ‡³ Chennai
+      - IND ðŸ‡®ðŸ‡³ Jaipur
+      - IND ðŸ‡®ðŸ‡³ Mumbai
+      - IND ðŸ‡®ðŸ‡³ Mumbai 2
+      - IND ðŸ‡®ðŸ‡³ Mumbai 3
+      - IND ðŸ‡®ðŸ‡³ Mumbai 4
+      - IND ðŸ‡®ðŸ‡³ Mumbai 5
+      - IND ðŸ‡®ðŸ‡³ Mumbai 6
+      - IND ðŸ‡®ðŸ‡³ Mumbai 7
+      - IND ðŸ‡®ðŸ‡³ Mumbai 8
+      - IND ðŸ‡®ðŸ‡³ Mumbai 9
+      - IND ðŸ‡®ðŸ‡³ Mumbai 10
+      - IND ðŸ‡®ðŸ‡³ Mumbai 11
+      - IND ðŸ‡®ðŸ‡³ Mumbai 12
+      - IND ðŸ‡®ðŸ‡³ Mumbai 13
+      - IND ðŸ‡®ðŸ‡³ Mumbai 14
+      - IND ðŸ‡®ðŸ‡³ Mumbai 15
+      - IND ðŸ‡®ðŸ‡³ Mumbai 16
+      - IND ðŸ‡®ðŸ‡³ Mumbai 17
+      - IND ðŸ‡®ðŸ‡³ Mumbai 18
+      - IND ðŸ‡®ðŸ‡³ Mumbai 19
+      - IND ðŸ‡®ðŸ‡³ Mumbai 20
+      - IND ðŸ‡®ðŸ‡³ Mumbai 21
+      - IND ðŸ‡®ðŸ‡³ Mumbai 22
+      - IND ðŸ‡®ðŸ‡³ Mumbai 23
+      - INDO ðŸ‡®ðŸ‡© Jakarta
+      - ISR ðŸ‡®ðŸ‡± Haifa
+      - ISR ðŸ‡®ðŸ‡± Haifa 2
+      - ISR ðŸ‡®ðŸ‡± Haifa 3
+      - ISR ðŸ‡®ðŸ‡± Tel Aviv
+      - ITA ðŸ‡®ðŸ‡¹ Milan
+      - ITA ðŸ‡®ðŸ‡¹ Milan 2
+      - ITA ðŸ‡®ðŸ‡¹ Milan 3
+      - ITA ðŸ‡®ðŸ‡¹ Milan 4
+      - ITA ðŸ‡®ðŸ‡¹ Milan 5
+      - LUX ðŸ‡±ðŸ‡º Luxembourg
+      - MLD ðŸ‡²ðŸ‡© Chisinau
+      - SRB ðŸ‡·ðŸ‡¸ Belgrade
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 2
+      - SWD ðŸ‡¸ðŸ‡ª Stockholm 3
+      - TUR ðŸ‡¹ðŸ‡· BahÃ§elievler
+      - TUR ðŸ‡¹ðŸ‡· Istanbul
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 2
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 3
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 4
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 5
+      - TUR ðŸ‡¹ðŸ‡· Istanbul 6
+rule-providers:
+  iran:
+    type: http
+    behavior: classical
+    url: "https://github.com/SamadiPour/iran-hosted-domains/releases/latest/download/clash_rules.yaml"
+    path: ./ruleset/iran.yaml
+    interval: 432000
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
