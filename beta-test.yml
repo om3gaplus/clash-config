@@ -1,3 +1,38 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  nameserver:
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+  fallback:
+    - https://EU2.DNS.LAVATE.CH/dns-query
+    - https://DNS.HeN.ee/dns-query
+    - https://NoTMIKE.dev/dns.php
+    - tls://dns.google:853
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+    - https://dns.adguard.com/dns-query
+    - https://dnsforge.de/dns-query
+    - https://dns.quad9.net/dns-query
+    - https://DANDELIONSPROUT.Asuscomm.com:2501/dns-query
+  fallback-filter:
+    geoip: true
+proxies:
   - {name: ALB 🇦🇱 Tirana, server: 31.171.153.178, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: ARG 🇦🇷 Buenos Aires, server: 131.255.4.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
   - {name: AUS 🇦🇺 Sydney, server: 194.14.208.110, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
