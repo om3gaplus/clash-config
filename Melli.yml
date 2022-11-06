@@ -1,0 +1,85 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - {name: "s1", server: 37.32.30.175, port: 443, type: socks5}
+  - {name: "s2", server: 193.151.136.204, port: 1080, type: socks5}
+  - {name: "s3", server: 188.121.111.142, port: 443, type: socks5}
+  - {name: "s4", server: 193.151.132.133, port: 9999, type: socks5}
+  - {name: "s5", server: 193.151.136.228, port: 1080, type: socks5}
+  - {name: "s6", server: 37.32.11.45, port: 1081, type: socks5}
+  - {name: "s7", server: 37.32.23.178, port: 1081, type: socks5}
+  - {name: "s8", server: 37.32.20.80, port: 443, type: socks5}
+  - {name: "s9", server: 37.32.10.3, port: 1081, type: http}
+proxy-groups:
+  - name: MENU
+    type: select
+    proxies:
+      - AUTOMATIC
+      - MANUAL
+  - name: MANUAL
+    type: select
+    proxies:
+      - s1
+      - s2
+      - s3
+      - s4
+      - s5
+      - s6
+      - s7
+      - s8
+      - s9
+  - name: AUTOMATIC
+    type: url-test
+    url: http://connectivitycheck.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - s1
+      - s2
+      - s3
+      - s4
+      - s5
+      - s6
+      - s7
+      - s8
+      - s9
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
+  
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
+  
