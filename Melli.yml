@@ -25,7 +25,7 @@ proxies:
   - {name: "s6", server: 37.32.11.45, port: 1081, type: socks5}
   - {name: "s7", server: 37.32.23.178, port: 1081, type: socks5}
   - {name: "s8", server: 37.32.20.80, port: 443, type: socks5}
-  - {name: "s9", server: 37.32.10.3, port: 1081, type: http}
+  - {name: "s9", server: 37.32.27.143, port: 8888, type: socks5}
 proxy-groups:
   - name: MENU
     type: select
