@@ -17,93 +17,93 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
 proxies:
-  - {name: "AZR  Baku", server: "94.20.154.38", port: "50000", type: ss, cipher: aes-256-cfb, password: "3135771619"}
-  - {name: "AZR  Baku 2", server: "94.20.154.26", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "B&H  Novi Travnik", server: "185.164.35.9", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "B&H  Novi Travnik 2", server: "185.212.111.59", port: "33992", type: ss, cipher: aes-256-gcm, password: "8n6pwAcrrv2pj6tFY2p3TbQ6"}
-  - {name: "B&H  Novi Travnik 3", server: "185.99.3.205", port: "39772", type: ss, cipher: aes-256-gcm, password: "CUndSZnYsPKcu6Kj8THVMBHD"}
-  - {name: "B&H  Novi Travnik 4", server: "185.212.111.59", port: "50168", type: ss, cipher: aes-256-gcm, password: "WCuz7yrfZSCQQXSNrtGPz2HT"}
-  - {name: "B&H  Novi Travnik 5", server: "185.99.3.214", port: "50168", type: ss, cipher: aes-256-gcm, password: "WCuz7yrfZSCQQXSNrtGPz2HT"}
-  - {name: "B&H  Novi Travnik 6", server: "185.99.3.108", port: "34815", type: ss, cipher: aes-256-gcm, password: "LkFAzkzXkSCRYa2CsRdL8cGb"}
-  - {name: "B&H  Novi Travnik 7", server: "185.99.3.108", port: "47121", type: ss, cipher: aes-256-gcm, password: "CTK8GXFQgKYQErrghPJfZ6tk"}
-  - {name: "B&H  Novi Travnik 8", server: "185.99.3.108", port: "37588", type: ss, cipher: aes-256-gcm, password: "kD9vkjnE6dsUzwQfvKkPkQAd"}
-  - {name: "B&H  Novi Travnik 9", server: "185.99.3.108", port: "44820", type: ss, cipher: aes-256-gcm, password: "jspgz9G3VmvBMCgMUWLBaZHu"}
-  - {name: "CYP  Nicosia", server: "213.169.137.221", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "GRC  Athens", server: "185.51.134.210", port: "8388", type: ss, cipher: chacha20-ietf-poly1305, password: "mTrN2fMYeWJwrkWpTnL2"}
-  - {name: "GRC  Athens 2", server: "185.243.214.55", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "GRC  Thessaloniki", server: "192.71.166.102", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "HUN  Budapest", server: "194.71.130.160", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "HUN  Budapest 2", server: "194.71.130.194", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "ICL  Hafnarfjordur", server: "37.235.49.158", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "ISR  Haifa", server: "83.229.73.60", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "ISR  Haifa 2", server: "83.229.73.120", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "ISR  Haifa 3", server: "185.162.125.91", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "ISR  Tel Aviv", server: "212.199.61.55", port: "8388", type: ss, cipher: chacha20-ietf-poly1305, password: "scDj68fv6xkMg2np9RgW"}
-  - {name: "ITA  Milan", server: "95.141.37.111", port: "812", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "ITA  Milan 2", server: "158.58.173.54", port: "809", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "ITA  Milan 3", server: "158.58.173.240", port: "806", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "ITA  Milan 4", server: "95.174.23.218", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "ITA  Milan 5", server: "185.213.21.6", port: "5500", type: ss, cipher: aes-256-gcm, password: "KixLvKzwjekG00rm"}
-  - {name: "JPN  Tokyo", server: "45.66.134.210", port: "807", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "JPN  Tokyo 2", server: "89.31.125.101", port: "812", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "JPN  Tokyo 3", server: "89.31.125.216", port: "802", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "JPN  Tokyo 4", server: "185.160.24.217", port: "805", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "JPN  Tokyo 5", server: "176.97.70.125", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "JPN  Tokyo 6", server: "85.208.108.66", port: "8881", type: ss, cipher: aes-256-gcm, password: "kDWvXYZoTBcGkC4"}
-  - {name: "JPN  Tokyo 7", server: "85.208.108.134", port: "8881", type: ss, cipher: aes-256-gcm, password: "kDWvXYZoTBcGkC4"}
-  - {name: "JPN  Tokyo 8", server: "85.208.110.2", port: "8882", type: ss, cipher: aes-256-gcm, password: "kDWvXYZoTBcGkC4"}
-  - {name: "JPN  Tokyo 9", server: "85.208.108.106", port: "4444", type: ss, cipher: aes-256-gcm, password: "pKEW8JPByTVTLtM"}
-  - {name: "JPN  Tokyo 10", server: "85.208.108.134", port: "443", type: ss, cipher: aes-256-gcm, password: "pKEW8JPByTVTLtM"}
-  - {name: "JPN  Tokyo 11", server: "85.208.108.66", port: "6379", type: ss, cipher: aes-256-gcm, password: "zDNVedRFPQexG9v"}
-  - {name: "JPN  Tokyo 12", server: "85.208.108.106", port: "6379", type: ss, cipher: aes-256-gcm, password: "zDNVedRFPQexG9v"}
-  - {name: "JPN  Tokyo 13", server: "5.180.76.74", port: "7307", type: ss, cipher: aes-256-gcm, password: "FoOiGlkAA9yPEGP"}
-  - {name: "JPN  Tokyo 14", server: "85.208.108.234", port: "7306", type: ss, cipher: aes-256-gcm, password: "FoOiGlkAA9yPEGP"}
-  - {name: "JPN  Tokyo 15", server: "85.208.110.2", port: "7306", type: ss, cipher: aes-256-gcm, password: "FoOiGlkAA9yPEGP"}
-  - {name: "JPN  Tokyo 16", server: "85.208.108.58", port: "8080", type: ss, cipher: aes-256-gcm, password: "KixLvKzwjekG00rm"}
-  - {name: "JPN  Tokyo 17", server: "85.208.108.194", port: "8080", type: ss, cipher: aes-256-gcm, password: "KixLvKzwjekG00rm"}
-  - {name: "JPN  Tokyo 18", server: "85.208.108.18", port: "8091", type: ss, cipher: aes-256-gcm, password: "PCnnH6SQSnfoS27"}
-  - {name: "JPN  Tokyo 19", server: "85.208.108.58", port: "8090", type: ss, cipher: aes-256-gcm, password: "PCnnH6SQSnfoS27"}
-  - {name: "JPN  Tokyo 20", server: "85.208.110.2", port: "8090", type: ss, cipher: aes-256-gcm, password: "PCnnH6SQSnfoS27"}
-  - {name: "JPN  Tokyo 21", server: "85.208.110.178", port: "8091", type: ss, cipher: aes-256-gcm, password: "PCnnH6SQSnfoS27"}
-  - {name: "JPN  Tokyo 22", server: "85.208.108.106", port: "7001", type: ss, cipher: aes-256-gcm, password: "RexnBgU7EV5ADxG"}
-  - {name: "JPN  Tokyo 23", server: "85.208.108.234", port: "7002", type: ss, cipher: aes-256-gcm, password: "RexnBgU7EV5ADxG"}
-  - {name: "JPN  Tokyo 24", server: "5.180.76.74", port: "6697", type: ss, cipher: aes-256-gcm, password: "TEzjfAYq2IjtuoS"}
-  - {name: "JPN  Tokyo 25", server: "85.208.110.178", port: "6679", type: ss, cipher: aes-256-gcm, password: "TEzjfAYq2IjtuoS"}
-  - {name: "JPN  Tokyo 26", server: "85.208.110.178", port: "6697", type: ss, cipher: aes-256-gcm, password: "TEzjfAYq2IjtuoS"}
-  - {name: "JPN  Tokyo 27", server: "5.180.76.74", port: "8009", type: ss, cipher: aes-256-gcm, password: "XKFKl2rULjIp74"}
-  - {name: "JPN  Tokyo 28", server: "85.208.108.134", port: "8009", type: ss, cipher: aes-256-gcm, password: "XKFKl2rULjIp74"}
-  - {name: "JPN  Tokyo 29", server: "85.208.108.194", port: "8008", type: ss, cipher: aes-256-gcm, password: "XKFKl2rULjIp74"}
-  - {name: "JPN  Tokyo 30", server: "85.208.108.234", port: "8009", type: ss, cipher: aes-256-gcm, password: "XKFKl2rULjIp74"}
-  - {name: "JPN  Tokyo 31", server: "5.180.76.74", port: "3306", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 32", server: "85.208.108.18", port: "8888", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 33", server: "85.208.108.194", port: "8888", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 34", server: "85.208.108.234", port: "3389", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 35", server: "85.208.110.2", port: "3389", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 36", server: "85.208.110.138", port: "5000", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 37", server: "109.166.37.246", port: "5001", type: ss, cipher: aes-256-gcm, password: "Y6R9pAtvxxzmGC"}
-  - {name: "JPN  Tokyo 38", server: "85.208.108.18", port: "8118", type: ss, cipher: aes-256-gcm, password: "cdBIDV42DCwnfIN"}
-  - {name: "JPN  Tokyo 39", server: "85.208.108.66", port: "8119", type: ss, cipher: aes-256-gcm, password: "cdBIDV42DCwnfIN"}
-  - {name: "JPN  Tokyo 40", server: "85.208.108.194", port: "8119", type: ss, cipher: aes-256-gcm, password: "cdBIDV42DCwnfIN"}
-  - {name: "JPN  Tokyo 41", server: "85.208.110.2", port: "8119", type: ss, cipher: aes-256-gcm, password: "cdBIDV42DCwnfIN"}
-  - {name: "JPN  Tokyo 42", server: "85.208.108.90", port: "2376", type: ss, cipher: aes-256-gcm, password: "faBAoD54k87UJG7"}
-  - {name: "JPN  Tokyo 43", server: "5.180.76.74", port: "9102", type: ss, cipher: aes-256-gcm, password: "e4FCWrgpkji3QY"}
-  - {name: "JPN  Tokyo 44", server: "85.208.108.66", port: "9101", type: ss, cipher: aes-256-gcm, password: "e4FCWrgpkji3QY"}
-  - {name: "JPN  Tokyo 45", server: "85.208.110.2", port: "9101", type: ss, cipher: aes-256-gcm, password: "e4FCWrgpkji3QY"}
-  - {name: "JPN  Tokyo 46", server: "85.208.110.178", port: "9102", type: ss, cipher: aes-256-gcm, password: "e4FCWrgpkji3QY"}
-  - {name: "JPN  Tokyo 47", server: "85.208.108.234", port: "5003", type: ss, cipher: aes-256-gcm, password: "g5MeD6Ft3CWlJId"}
-  - {name: "LUX  Luxembourg", server: "172.255.248.35", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "MLD  Chisinau", server: "192.121.87.89", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "SRB  Belgrade", server: "194.71.126.31", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "SWD  Stockholm", server: "185.243.215.187", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "SWD  Stockholm 2", server: "80.67.3.120", port: "40503", type: ss, cipher: aes-256-cfb, password: "XS4DBE6"}
-  - {name: "SWD  Stockholm 3", server: "46.246.93.59", port: "989", type: ss, cipher: aes-256-cfb, password: "f8f7aCzcPKbsF8p3"}
-  - {name: "TUR  BahÃƒelievler", server: "185.17.113.234", port: "812", type: ss, cipher: chacha20-ietf-poly1305, password: "G!yBwPWH3Vao"}
-  - {name: "TUR  Istanbul", server: "game.m-xler.eu", port: "443", type: ss, cipher: xchacha20-ietf-poly1305, password: "mxler"}
-  - {name: "TUR  Istanbul 2", server: "141.98.119.156", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "TUR  Istanbul 3", server: "141.98.119.180", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "TUR  Istanbul 4", server: "185.219.134.52", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "TUR  Istanbul 5", server: "185.219.134.182", port: "50003", type: ss, cipher: aes-256-cfb, password: "8460400130"}
-  - {name: "TUR  Istanbul 6", server: "141.98.119.156", port: "50007", type: ss, cipher: chacha20-ietf-poly1305, password: "7122910143"}
+  - {name: "AZR  Baku", server: 94.20.154.38, port: 50000, type: ss, cipher: aes-256-cfb, password: 3135771619}
+  - {name: "AZR  Baku 2", server: 94.20.154.26, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "B&H  Novi Travnik", server: 185.164.35.9, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "B&H  Novi Travnik 2", server: 185.212.111.59, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: "B&H  Novi Travnik 3", server: 185.99.3.205, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: "B&H  Novi Travnik 4", server: 185.212.111.59, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: "B&H  Novi Travnik 5", server: 185.99.3.214, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: "B&H  Novi Travnik 6", server: 185.99.3.108, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: "B&H  Novi Travnik 7", server: 185.99.3.108, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: "B&H  Novi Travnik 8", server: 185.99.3.108, port: 37588, type: ss, cipher: aes-256-gcm, password: kD9vkjnE6dsUzwQfvKkPkQAd}
+  - {name: "B&H  Novi Travnik 9", server: 185.99.3.108, port: 44820, type: ss, cipher: aes-256-gcm, password: jspgz9G3VmvBMCgMUWLBaZHu}
+  - {name: "CYP  Nicosia", server: 213.169.137.221, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "GRC  Athens", server: 185.51.134.210, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: mTrN2fMYeWJwrkWpTnL2}
+  - {name: "GRC  Athens 2", server: 185.243.214.55, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "GRC  Thessaloniki", server: 192.71.166.102, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "HUN  Budapest", server: 194.71.130.160, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "HUN  Budapest 2", server: 194.71.130.194, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ICL  Hafnarfjordur", server: 37.235.49.158, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "ISR  Haifa", server: 83.229.73.60, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR  Haifa 2", server: 83.229.73.120, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR  Haifa 3", server: 185.162.125.91, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "ISR  Tel Aviv", server: 212.199.61.55, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: scDj68fv6xkMg2np9RgW}
+  - {name: "ITA  Milan", server: 95.141.37.111, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA  Milan 2", server: 158.58.173.54, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA  Milan 3", server: 158.58.173.240, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "ITA  Milan 4", server: 95.174.23.218, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "ITA  Milan 5", server: 185.213.21.6, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "JPN  Tokyo", server: 45.66.134.210, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "JPN  Tokyo 2", server: 89.31.125.101, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "JPN  Tokyo 3", server: 89.31.125.216, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "JPN  Tokyo 4", server: 185.160.24.217, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "JPN  Tokyo 5", server: 176.97.70.125, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "JPN  Tokyo 6", server: 85.208.108.66, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: "JPN  Tokyo 7", server: 85.208.108.134, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: "JPN  Tokyo 8", server: 85.208.110.2, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: "JPN  Tokyo 9", server: 85.208.108.106, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "JPN  Tokyo 10", server: 85.208.108.134, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: "JPN  Tokyo 11", server: 85.208.108.66, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "JPN  Tokyo 12", server: 85.208.108.106, port: 6379, type: ss, cipher: aes-256-gcm, password: zDNVedRFPQexG9v}
+  - {name: "JPN  Tokyo 13", server: 5.180.76.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "JPN  Tokyo 14", server: 85.208.108.234, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "JPN  Tokyo 15", server: 85.208.110.2, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "JPN  Tokyo 16", server: 85.208.108.58, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "JPN  Tokyo 17", server: 85.208.108.194, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "JPN  Tokyo 18", server: 85.208.108.18, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "JPN  Tokyo 19", server: 85.208.108.58, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "JPN  Tokyo 20", server: 85.208.110.2, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "JPN  Tokyo 21", server: 85.208.110.178, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "JPN  Tokyo 22", server: 85.208.108.106, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "JPN  Tokyo 23", server: 85.208.108.234, port: 7002, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
+  - {name: "JPN  Tokyo 24", server: 5.180.76.74, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "JPN  Tokyo 25", server: 85.208.110.178, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "JPN  Tokyo 26", server: 85.208.110.178, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "JPN  Tokyo 27", server: 5.180.76.74, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "JPN  Tokyo 28", server: 85.208.108.134, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "JPN  Tokyo 29", server: 85.208.108.194, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "JPN  Tokyo 30", server: 85.208.108.234, port: 8009, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74}
+  - {name: "JPN  Tokyo 31", server: 5.180.76.74, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 32", server: 85.208.108.18, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 33", server: 85.208.108.194, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 34", server: 85.208.108.234, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 35", server: 85.208.110.2, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 36", server: 85.208.110.138, port: 5000, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 37", server: 109.166.37.246, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "JPN  Tokyo 38", server: 85.208.108.18, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "JPN  Tokyo 39", server: 85.208.108.66, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "JPN  Tokyo 40", server: 85.208.108.194, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "JPN  Tokyo 41", server: 85.208.110.2, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: "JPN  Tokyo 42", server: 85.208.108.90, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "JPN  Tokyo 43", server: 5.180.76.74, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "JPN  Tokyo 44", server: 85.208.108.66, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "JPN  Tokyo 45", server: 85.208.110.2, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "JPN  Tokyo 46", server: 85.208.110.178, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "JPN  Tokyo 47", server: 85.208.108.234, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "LUX  Luxembourg", server: 172.255.248.35, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "MLD  Chisinau", server: 192.121.87.89, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "SRB  Belgrade", server: 194.71.126.31, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "SWD  Stockholm", server: 185.243.215.187, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "SWD  Stockholm 2", server: 80.67.3.120, port: 40503, type: ss, cipher: aes-256-cfb, password: XS4DBE6}
+  - {name: "SWD  Stockholm 3", server: 46.246.93.59, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: "TUR  BahÃƒelievler", server: 185.17.113.234, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "TUR  Istanbul", server: game.m-xler.eu, port: 443, type: ss, cipher: xchacha20-ietf-poly1305, password: mxler}
+  - {name: "TUR  Istanbul 2", server: 141.98.119.156, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR  Istanbul 3", server: 141.98.119.180, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR  Istanbul 4", server: 185.219.134.52, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR  Istanbul 5", server: 185.219.134.182, port: 50003, type: ss, cipher: aes-256-cfb, password: 8460400130}
+  - {name: "TUR  Istanbul 6", server: 141.98.119.156, port: 50007, type: ss, cipher: chacha20-ietf-poly1305, password: 7122910143}
 proxy-groups:
   - name: MENU
     type: select
