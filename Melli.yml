@@ -17,15 +17,133 @@ dns:
     - 1.1.1.1
     - 8.8.8.8
 proxies:
-  - {name: "s1", server: 37.32.30.175, port: 443, type: socks5}
-  - {name: "s2", server: 193.151.136.204, port: 1080, type: socks5}
-  - {name: "s3", server: 188.121.111.142, port: 443, type: socks5}
-  - {name: "s4", server: 193.151.132.133, port: 9999, type: socks5}
-  - {name: "s5", server: 193.151.136.228, port: 1080, type: socks5}
-  - {name: "s6", server: 37.32.11.45, port: 1081, type: socks5}
-  - {name: "s7", server: 37.32.23.178, port: 1081, type: socks5}
-  - {name: "s8", server: 37.32.20.80, port: 443, type: socks5}
-  - {name: "s9", server: 37.32.27.143, port: 8888, type: socks5}
+  - name: s1
+    server: 37.32.30.175
+    port: 443
+    type: socks5
+  - name: s2
+    server: 193.151.136.204
+    port: 1080
+    type: socks5
+  - name: s3
+    server: 188.121.111.142
+    port: 443
+    type: socks5
+  - name: s4
+    server: 193.151.132.133
+    port: 9999
+    type: socks5
+  - name: s5
+    server: 193.151.136.228
+    port: 1080
+    type: socks5
+  - name: s6
+    server: 37.32.11.45
+    port: 1081
+    type: socks5
+  - name: s7
+    server: 37.32.23.178
+    port: 1081
+    type: socks5
+  - name: s8
+    server: 37.32.20.80
+    port: 443
+    type: socks5
+  - name: s9
+    server: 37.32.27.143
+    port: 8888
+    type: socks5
+  - name: germany 1
+    type: vmess
+    server: vde2.0bad.com
+    port: 443
+    uuid: 927094d3-d678-4763-8591-e240d0bcae87
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /chat
+      headers:
+        Host: vde2.0bad.com
+    _index: 9
+  - name: USA to Canada
+    type: vmess
+    server: 43.72img.xyz
+    port: 443
+    uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 43.72img.xyz
+  - name: USA 1
+    type: vmess
+    server: 21.72img.xyz
+    port: 443
+    uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e
+    alterId: 0
+    cipher: auto
+    tls: true
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: 21.72img.xyz
+  - name: USA 2
+    server: hk1.kfcnode.xyz
+    port: 443
+    type: trojan
+    password: e90f6dea-23f9-47ec-ba23-e2eb5def2e78
+    sni: hk1.kfcnode.xyz
+    skip-cert-verify: true
+    udp: true
+  - name: USA 3
+    server: hk1.kfcnode.xyz
+    port: 443
+    type: trojan
+    password: e90f6dea-23f9-47ec-ba23-e2eb5def2e78
+    skip-cert-verify: true
+    udp: true
+  - name: France 1
+    type: vmess
+    server: 51.222.137.198
+    port: 80
+    uuid: e3eba3ac-5bea-409f-ac5c-6c964e04d0c4
+    alterId: 0
+    cipher: auto
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /sshocean
+      headers:
+        Host: 51.222.137.198
+  - name: Vietnam 1
+    type: vmess
+    server: 103.147.126.127
+    port: 80
+    uuid: c863dd9d-55f2-4615-b1a1-549da098722e
+    alterId: 0
+    cipher: auto
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /nkpvpn.site
+      headers:
+        Host: 103.147.126.127
+  - name: Janpan 1
+    server: jp1.sanfen001.pics
+    port: 443
+    type: trojan
+    password: 66bee8fa-56a6-4108-92ec-d4a0900270cb
+    skip-cert-verify: true
+    udp: true
 proxy-groups:
   - name: MENU
     type: select
@@ -44,6 +162,14 @@ proxy-groups:
       - s7
       - s8
       - s9
+      - germany 1
+      - USA to Canada
+      - USA 1
+      - USA 2
+      - USA 3
+      - France 1
+      - Vietnam 1
+      - Janpan 1
   - name: AUTOMATIC
     type: url-test
     url: http://connectivitycheck.gstatic.com/generate_204
@@ -58,6 +184,14 @@ proxy-groups:
       - s7
       - s8
       - s9
+      - germany 1
+      - USA to Canada
+      - USA 1
+      - USA 2
+      - USA 3
+      - France 1
+      - Vietnam 1
+      - Janpan 1
 rules:
   - DOMAIN-SUFFIX,ir,DIRECT
   - GEOIP,IR,DIRECT
@@ -76,10 +210,8 @@ rules:
   - IP-CIDR,1.1.1.1/32,MENU
   - IP-CIDR,1.0.0.1/32,MENU
   - DOMAIN-SUFFIX,local,DIRECT
-  
   - IP-CIDR,8.8.8.8/32,MENU
   - IP-CIDR,8.8.4.4/32,MENU
   - IP-CIDR,1.1.1.1/32,MENU
   - IP-CIDR,1.0.0.1/32,MENU
   - DOMAIN-SUFFIX,local,DIRECT
-  
