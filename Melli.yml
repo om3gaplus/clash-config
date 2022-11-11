@@ -34,11 +34,11 @@ proxies:
     port: 9999
     type: socks5
   - name: s5
-    server: 193.151.136.228
-    port: 1080
+    server: 5.61.24.6
+    port: 443
     type: socks5
   - name: s6
-    server: 37.32.11.45
+    server: 5.61.29.50
     port: 1081
     type: socks5
   - name: s7
