@@ -6,7 +6,7 @@ external-controller: 127.0.0.1:9090
 proxies:
   - name: :( | 1
     type: socks5
-    server: us USA, Dallas
+    server: us USA, Dallass
     port: "1080"
     username: qkbplycv
     password: b7u8eyoe
