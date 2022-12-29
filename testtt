@@ -1,0 +1,125 @@
+mixed-port: 7890
+allow-lan: false
+mode: Global
+log-level: silent
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: redir-host
+  nameserver:
+    - https://1.1.1.1/dns-query
+    - https://8.8.8.8/dns-query
+  fallback:
+    - https://1.0.0.1/dns-query
+    - https://8.8.4.4/dns-query
+    - 1.1.1.1
+    - 8.8.8.8
+proxies:
+  - name: france (no 403 error)
+    type: vmess
+    server: iris.ns.cloudflare.com
+    port: "2052"
+    uuid: e2440fba-21f0-4b45-8dee-6f165132e646
+    alterId: "0"
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: france1.ge-server1-yazd.gq
+  - name: germany ^1^ 5.75
+    type: vmess
+    server: discord.gg
+    port: "2052"
+    uuid: 2699af94-6000-433f-d23c-4c07adf8883c
+    alterId: "0"
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: german1.ge-server1-yazd.gq
+  - name: germany ^2^ 116.203
+    type: vmess
+    server: discord.gg
+    port: "2052"
+    uuid: 813eee05-1e19-437e-b68a-6d19d050c703
+    alterId: "0"
+    cipher: auto
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ge2.ge-server1-yazd.gq
+    _index: 2
+  - name: germany ^3^ 159.69
+    type: vmess
+    server: aaden.ns.cloudflare.com
+    port: "2052"
+    uuid: dc82258e-3a28-4f75-d61b-59c4898904e3
+    alterId: "0"
+    cipher: auto
+    skip-cert-verify: true
+    network: ws
+    ws-opts:
+      path: /
+      headers:
+        Host: ge-server1-yazd.gq
+  - name: mammad
+    type: socks5
+    server: 192.168.1.3
+    port: "7890"
+  - name: france TCP
+    type: vmess
+    server: 107.191.62.202
+    port: "443"
+    uuid: 833f0b06-0ed2-458d-ca55-d9d7f6b83ef4
+    alterId: "0"
+    cipher: auto
+proxy-groups:
+  - name: MENU
+    type: select
+    proxies:
+      - AUTOMATIC
+      - MANUAL
+  - name: MANUAL
+    type: select
+    proxies:
+      - france (no 403 error)
+      - germany ^1^ 5.75
+      - germany ^2^ 116.203
+      - germany ^3^ 159.69
+  - name: AUTOMATIC
+    type: url-test
+    url: http://connectivitycheck.gstatic.com/generate_204
+    interval: 300
+    proxies:
+      - france (no 403 error)
+      - germany ^1^ 5.75
+      - germany ^2^ 116.203
+      - germany ^3^ 159.69
+rules:
+  - DOMAIN-SUFFIX,ir,DIRECT
+  - GEOIP,IR,DIRECT
+  - MATCH,MENU
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+  - IP-CIDR6,::1/128,DIRECT,no-resolve
+  - IP-CIDR6,fc00::/7,DIRECT,no-resolve
+  - IP-CIDR6,fe80::/10,DIRECT,no-resolve
+  - IP-CIDR6,fd00::/8,DIRECT,no-resolve
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,8.8.8.8/32,MENU
+  - IP-CIDR,8.8.4.4/32,MENU
+  - IP-CIDR,1.1.1.1/32,MENU
+  - IP-CIDR,1.0.0.1/32,MENU
+  - DOMAIN-SUFFIX,local,DIRECT
